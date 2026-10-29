@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+- name: 🇺🇦 乌克兰 (Ukraine) 01 - cp
   server: 216.24.57.225
   port: 2083
   udp: true
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 01 - cp
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 01 - cp
 rules:
 - MATCH,PROXIES

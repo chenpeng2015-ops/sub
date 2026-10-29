@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+- name: 🇸🇨 塞舌尔 (Seychelles) 01 - cp
   server: 45.207.207.25
   port: 443
   udp: true
@@ -16,12 +16,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - cp
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - cp
 rules:
 - MATCH,PROXIES

@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+- name: 🇨🇿 捷克 (Czech) 01 - cp
   server: 31.77.13.22
   port: 2063
   udp: true
@@ -21,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - cp
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - cp
 rules:
 - MATCH,PROXIES

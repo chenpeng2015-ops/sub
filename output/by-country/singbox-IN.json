@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 01 - xiaohe",
+      "tag": "🇮🇳 印度 (India) 01 - cp",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -24,34 +24,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 02 - xiaohe",
-      "server": "in002.zestapp778.com",
-      "server_port": 42733,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "in002.zestapp778.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - xiaohe",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 04 - xiaohe",
+      "tag": "🇮🇳 印度 (India) 02 - cp",
       "server": "in.smrtai.top",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
@@ -71,7 +45,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 05 - xiaohe",
+      "tag": "🇮🇳 印度 (India) 03 - cp",
       "server": "152.67.8.205",
       "server_port": 80,
       "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
@@ -84,26 +58,52 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 04 - cp",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇳 印度 (India) 05 - cp",
+      "server": "in002.zestapp778.com",
+      "server_port": 42733,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "in002.zestapp778.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 - xiaohe",
-        "🇮🇳 印度 (India) 02 - xiaohe",
-        "🇮🇳 印度 (India) 03 - xiaohe",
-        "🇮🇳 印度 (India) 04 - xiaohe",
-        "🇮🇳 印度 (India) 05 - xiaohe"
+        "🇮🇳 印度 (India) 01 - cp",
+        "🇮🇳 印度 (India) 02 - cp",
+        "🇮🇳 印度 (India) 03 - cp",
+        "🇮🇳 印度 (India) 04 - cp",
+        "🇮🇳 印度 (India) 05 - cp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 - xiaohe",
-        "🇮🇳 印度 (India) 02 - xiaohe",
-        "🇮🇳 印度 (India) 03 - xiaohe",
-        "🇮🇳 印度 (India) 04 - xiaohe",
-        "🇮🇳 印度 (India) 05 - xiaohe"
+        "🇮🇳 印度 (India) 01 - cp",
+        "🇮🇳 印度 (India) 02 - cp",
+        "🇮🇳 印度 (India) 03 - cp",
+        "🇮🇳 印度 (India) 04 - cp",
+        "🇮🇳 印度 (India) 05 - cp"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
