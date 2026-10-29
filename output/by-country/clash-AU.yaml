@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - cp
+  server: 45.63.30.142
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectwithemployerstohireyouridealteam.com
+  skip-cert-verify: false
+- name: 🇦🇺 澳大利亚 (Australia) 02 - cp
   server: 51.161.204.242
   port: 443
   udp: true
@@ -17,24 +25,7 @@ proxies:
     short-id: d15c17cef9b2e456
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇦🇺 澳大利亚 (Australia) 02 - cp
-  server: 45.63.30.142
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectwithemployerstohireyouridealteam.com
-  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 03 - cp
-  server: au001.zestapp778.com
-  port: 35652
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: au001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇦🇺 澳大利亚 (Australia) 04 - cp
   server: 51.161.204.244
   port: 443
   udp: true
@@ -55,7 +46,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - cp
   - 🇦🇺 澳大利亚 (Australia) 02 - cp
   - 🇦🇺 澳大利亚 (Australia) 03 - cp
-  - 🇦🇺 澳大利亚 (Australia) 04 - cp
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,6 +54,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - cp
   - 🇦🇺 澳大利亚 (Australia) 02 - cp
   - 🇦🇺 澳大利亚 (Australia) 03 - cp
-  - 🇦🇺 澳大利亚 (Australia) 04 - cp
 rules:
 - MATCH,PROXIES
