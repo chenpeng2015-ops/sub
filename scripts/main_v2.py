@@ -64,7 +64,8 @@ SOURCE_URLS = [
     "https://www.ermao.net/sub/v2ray/ermao.net",
     "https://cdn.jsdelivr.net/gh/sdise/vpngate@main/vpngate-v2ray.txt",
     "https://cdn.jsdelivr.net/gh/free18/v2ray@main/v.txt",
-    
+    "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/jp/all.txt",
+    "https://mobile.yangkeduo.com/goods.html?ps=rS3bAr7sUg",
     "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt"
     
 ]
