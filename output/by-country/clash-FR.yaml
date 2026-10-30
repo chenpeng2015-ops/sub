@@ -5,27 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - cp
-  server: pl140.vpnbook.com
-  port: 443
+  server: 62.210.91.10
+  port: 23576
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 02 - cp
-  server: 51.83.192.80
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 🇫🇷 法国 (France) 03 - cp
-  server: 51.77.216.96
-  port: 53567
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: SnOSRfo0h6mnWehTG_Xang
-- name: 🇫🇷 法国 (France) 04 - cp
   server: 152.228.139.33
   port: 35108
   udp: true
@@ -36,55 +28,18 @@ proxies:
     public-key: X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg
     short-id: 52add08b86a5ccea
   servername: www.nvidia.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-common3
-- name: 🇫🇷 法国 (France) 05 - cp
-  server: 51.77.217.70
-  port: 2053
-  udp: true
-  type: vless
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  tls: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 06 - cp
-  server: 138.124.70.41
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇫🇷 法国 (France) 07 - cp
-  server: 165.215.250.14
+- name: 🇫🇷 法国 (France) 03 - cp
+  server: 54.36.174.134
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 08 - cp
-  server: 161.97.66.16
-  port: 443
-  udp: true
-  type: vless
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  tls: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-    short-id: 086bf957
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 09 - cp
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+- name: 🇫🇷 法国 (France) 04 - cp
   server: 152.228.139.33
   port: 51671
   udp: true
@@ -99,7 +54,32 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc_common3
-- name: 🇫🇷 法国 (France) 10 - cp
+- name: 🇫🇷 法国 (France) 05 - cp
+  server: pl140.vpnbook.com
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+- name: 🇫🇷 法国 (France) 06 - cp
+  server: 138.124.70.41
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 07 - cp
+  server: 51.83.192.80
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇫🇷 法国 (France) 08 - cp
   server: 62.210.91.2
   port: 23576
   udp: true
@@ -112,22 +92,38 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 11 - cp
+- name: 🇫🇷 法国 (France) 09 - cp
+  server: 13.36.234.11
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 13.36.234.11
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 10 - cp
   server: 62.210.7.139
   port: 60111
   udp: true
   type: hysteria2
   password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.bing.com
+  sni: bing.com
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 12 - cp
-  server: 54.36.174.134
+- name: 🇫🇷 法国 (France) 11 - cp
+  server: 199.232.78.170
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-- name: 🇫🇷 法国 (France) 13 - cp
+  type: vless
+  uuid: XpnTeam-63
+  tls: true
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇫🇷 法国 (France) 12 - cp
   server: 54.37.136.194
   port: 2053
   udp: true
@@ -139,47 +135,30 @@ proxies:
     short-id: 50ba05992b05c1c3
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 14 - cp
-  server: 31.185.105.12
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 1953e43b-605c-4262-83eb-41a80646b801
-  sni: fr.song69.fun
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 15 - cp
-  server: 212.227.90.142
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 16 - cp
-  server: 185.225.68.232
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 17 - cp
-  server: 15.236.109.186
+- name: 🇫🇷 法国 (France) 13 - cp
+  server: 51.77.217.70
   port: 2053
   udp: true
   type: vless
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
   tls: true
-  servername: w.geogame.ir
-  skip-cert-verify: false
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 18 - cp
+- name: 🇫🇷 法国 (France) 14 - cp
+  server: 45.87.41.18
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 15 - cp
   server: 145.239.55.210
   port: 80
   udp: true
@@ -192,6 +171,66 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 16 - cp
+  server: 212.227.90.142
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 17 - cp
+  server: www.ubuntuupdates.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.ubuntuupdates.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🇫🇷 法国 (France) 18 - cp
+  server: ai.smrtai.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  tls: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+    short-id: 086bf957
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 19 - cp
+  server: 185.255.179.166
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 20 - cp
+  server: w.geogame.ir
+  port: 2053
+  udp: true
+  type: vless
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  tls: true
+  servername: w.geogame.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -215,6 +254,8 @@ proxy-groups:
   - 🇫🇷 法国 (France) 16 - cp
   - 🇫🇷 法国 (France) 17 - cp
   - 🇫🇷 法国 (France) 18 - cp
+  - 🇫🇷 法国 (France) 19 - cp
+  - 🇫🇷 法国 (France) 20 - cp
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -238,5 +279,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 16 - cp
   - 🇫🇷 法国 (France) 17 - cp
   - 🇫🇷 法国 (France) 18 - cp
+  - 🇫🇷 法国 (France) 19 - cp
+  - 🇫🇷 法国 (France) 20 - cp
 rules:
 - MATCH,PROXIES
