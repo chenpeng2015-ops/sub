@@ -36,15 +36,7 @@ jobs:
           # 便于 ip-api 等识别限速; GitHub runner 出口为美国 Azure
           PYTHONUNBUFFERED: '1'
 
-      - name: Upload test artifacts (调试用, 7天保留)
-        uses: actions/upload-artifact@v5
-        if: always()
-        with:
-          name: run-report
-          path: |
-            output/e2e_test_report.json
-          retention-days: 7
-          if-no-files-found: ignore
+      
 
       - name: Commit and Push Results
         run: |
