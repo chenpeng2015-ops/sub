@@ -5,44 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - cp
-  server: zfd-hkv1.kunlun01dns.com
-  port: 16115
+  server: 202.146.222.29
+  port: 443
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https3a2f2ft.me2fwangcai2efa3bfc3bcc3a1
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - cp
-  server: 103.149.182.79
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - cp
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - cp
-  server: 103.141.221.124
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - cp
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - cp
   server: 165.154.63.139
   port: 443
   udp: true
@@ -55,81 +25,48 @@ proxies:
     short-id: ca4aedd4
   servername: www.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - cp
-  server: 47.243.194.125
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - cp
+  server: 195.58.144.56
+  port: 11907
   udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
   tls: true
-  servername: nycqg19zkwacpm1b.v.3dns.vip
+  servername: 195.58.144.56
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: nycqg19zkwacpm1b.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - cp
-  server: vah4urdzl3jdx5r2.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: vah4urdzl3jdx5r2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - cp
-  server: 202.146.222.29
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - cp
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
+  sni: https://t.me/clashv8
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - cp
-  server: 219.76.13.177
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - cp
+  server: 202.146.222.174
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - cp
-  server: 219.76.13.177
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: 219.76.13.177
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - cp
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - cp
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16115
   udp: true
   type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
-  tls: true
-  servername: lcv8v9l7oyamxxfz.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - cp
+  server: dog-hk.kunlun01dns.com
+  port: 21022
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -142,11 +79,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - cp
   - 🇭🇰 中国香港 (Hong Kong) 06 - cp
   - 🇭🇰 中国香港 (Hong Kong) 07 - cp
-  - 🇭🇰 中国香港 (Hong Kong) 08 - cp
-  - 🇭🇰 中国香港 (Hong Kong) 09 - cp
-  - 🇭🇰 中国香港 (Hong Kong) 10 - cp
-  - 🇭🇰 中国香港 (Hong Kong) 11 - cp
-  - 🇭🇰 中国香港 (Hong Kong) 12 - cp
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -159,10 +91,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - cp
   - 🇭🇰 中国香港 (Hong Kong) 06 - cp
   - 🇭🇰 中国香港 (Hong Kong) 07 - cp
-  - 🇭🇰 中国香港 (Hong Kong) 08 - cp
-  - 🇭🇰 中国香港 (Hong Kong) 09 - cp
-  - 🇭🇰 中国香港 (Hong Kong) 10 - cp
-  - 🇭🇰 中国香港 (Hong Kong) 11 - cp
-  - 🇭🇰 中国香港 (Hong Kong) 12 - cp
 rules:
 - MATCH,PROXIES
