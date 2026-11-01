@@ -5,15 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - cp
-  server: 179.253.179.109
-  port: 57043
+  server: 188.225.62.62
+  port: 7443
   udp: true
   type: vless
-  uuid: da8fab8e-4a25-4eb0-b224-88ab96c753ce
+  uuid: 6116f0f3-15eb-4217-b38e-16514dc00ba1
+  flow: xtls-rprx-vision
   tls: true
-  servername: 87.121.86.24
+  servername: ru2.datacore-tech.ru
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
