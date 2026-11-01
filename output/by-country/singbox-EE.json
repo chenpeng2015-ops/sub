@@ -5,22 +5,17 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇩 摩尔多瓦 (Moldova) 01 - cp",
-      "server": "5.252.179.15",
-      "server_port": 443,
-      "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - cp",
+      "server": "179.253.179.109",
+      "server_port": 57043,
+      "uuid": "da8fab8e-4a25-4eb0-b224-88ab96c753ce",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "87.121.86.24",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-          "short_id": "296f27de82dad7ff"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -29,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 摩尔多瓦 (Moldova) 01 - cp"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - cp"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 摩尔多瓦 (Moldova) 01 - cp"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - cp"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

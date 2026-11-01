@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - cp
-  server: p141.panda001.net
-  port: 4652
+- name: 🇵🇭 菲律宾 (Philippines) 01 - cp
+  server: ph001.zestapp778.com
+  port: 46298
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: ph001.zestapp778.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - cp
+  - 🇵🇭 菲律宾 (Philippines) 01 - cp
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - cp
+  - 🇵🇭 菲律宾 (Philippines) 01 - cp
 rules:
 - MATCH,PROXIES
