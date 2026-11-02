@@ -5,36 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - cp
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-tw-002.fastervpn.world\u0026insecure=1\u0026allowinsecure=1
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - cp
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/oneclickvpnkeys
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - cp
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - cp
-  server: ench-snet-app.w-ctrip.cn
-  port: 22003
-  udp: true
-  type: trojan
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: cm.g.doubleclick.net
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - cp
-  server: ench-snet-app.w-ctrip.cn
-  port: 54815
-  udp: true
-  type: trojan
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: cm.g.doubleclick.net
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -43,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - cp
   - 🇹🇼 中国台湾 (Taiwan) 02 - cp
-  - 🇹🇼 中国台湾 (Taiwan) 03 - cp
-  - 🇹🇼 中国台湾 (Taiwan) 04 - cp
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - cp
   - 🇹🇼 中国台湾 (Taiwan) 02 - cp
-  - 🇹🇼 中国台湾 (Taiwan) 03 - cp
-  - 🇹🇼 中国台湾 (Taiwan) 04 - cp
 rules:
 - MATCH,PROXIES

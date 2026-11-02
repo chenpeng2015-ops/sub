@@ -59,13 +59,37 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - cp",
+      "server": "65.109.211.81",
+      "server_port": 465,
+      "uuid": "09f30c46-3964-41ce-882a-72aee83ddd42",
+      "tls": {
+        "enabled": true,
+        "server_name": "hw6.divarkhaghazi.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "hw6.divarkhaghazi.com."
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - cp",
         "🇫🇮 芬兰 (Finland) 02 - cp",
-        "🇫🇮 芬兰 (Finland) 03 - cp"
+        "🇫🇮 芬兰 (Finland) 03 - cp",
+        "🇫🇮 芬兰 (Finland) 04 - cp"
       ]
     },
     {
@@ -74,7 +98,8 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - cp",
         "🇫🇮 芬兰 (Finland) 02 - cp",
-        "🇫🇮 芬兰 (Finland) 03 - cp"
+        "🇫🇮 芬兰 (Finland) 03 - cp",
+        "🇫🇮 芬兰 (Finland) 04 - cp"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -40,6 +40,21 @@ proxies:
     short-id: 385cb18df0892069
   servername: fin2.vpngold.ru
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - cp
+  server: 65.109.211.81
+  port: 465
+  udp: true
+  type: vless
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  tls: true
+  servername: hw6.divarkhaghazi.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +63,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - cp
   - 🇫🇮 芬兰 (Finland) 02 - cp
   - 🇫🇮 芬兰 (Finland) 03 - cp
+  - 🇫🇮 芬兰 (Finland) 04 - cp
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +72,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - cp
   - 🇫🇮 芬兰 (Finland) 02 - cp
   - 🇫🇮 芬兰 (Finland) 03 - cp
+  - 🇫🇮 芬兰 (Finland) 04 - cp
 rules:
 - MATCH,PROXIES
