@@ -314,33 +314,33 @@ PROTOCOL_LABELS = {
 }
 
 COUNTRY_NAMES = {
-    "HK": "中国香港 (Hong Kong)", "TW": "中国台湾 (Taiwan)", "JP": "日本 (Japan)",
-    "SG": "新加坡 (Singapore)", "US": "美国 (United States)", "KR": "韩国 (South Korea)",
-    "DE": "德国 (Germany)", "GB": "英国 (United Kingdom)", "CA": "加拿大 (Canada)",
-    "FR": "法国 (France)", "NL": "荷兰 (Netherlands)", "RU": "俄罗斯 (Russia)",
-    "IN": "印度 (India)", "AU": "澳大利亚 (Australia)", "IT": "意大利 (Italy)",
-    "ES": "西班牙 (Spain)", "TR": "土耳其 (Turkey)", "AE": "阿联酋 (UAE)",
-    "BR": "巴西 (Brazil)", "MY": "马来西亚 (Malaysia)", "TH": "泰国 (Thailand)",
-    "VN": "越南 (Vietnam)", "PH": "菲律宾 (Philippines)", "ID": "印尼 (Indonesia)",
-    "MX": "墨西哥 (Mexico)", "AR": "阿根廷 (Argentina)", "CL": "智利 (Chile)",
-    "CO": "哥伦比亚 (Colombia)", "PE": "秘鲁 (Peru)", "ZA": "南非 (South Africa)",
-    "EG": "埃及 (Egypt)", "KE": "肯尼亚 (Kenya)", "NG": "尼日利亚 (Nigeria)",
-    "UA": "乌克兰 (Ukraine)", "PL": "波兰 (Poland)", "SE": "瑞典 (Sweden)",
-    "NO": "挪威 (Norway)", "FI": "芬兰 (Finland)", "DK": "丹麦 (Denmark)",
-    "CH": "瑞士 (Switzerland)", "AT": "奥地利 (Austria)", "BE": "比利时 (Belgium)",
-    "IE": "爱尔兰 (Ireland)", "PT": "葡萄牙 (Portugal)", "GR": "希腊 (Greece)",
-    "CZ": "捷克 (Czech)", "RO": "罗马尼亚 (Romania)", "HU": "匈牙利 (Hungary)",
-    "IL": "以色列 (Israel)", "SA": "沙特 (Saudi Arabia)", "QA": "卡塔尔 (Qatar)",
-    "KZ": "哈萨克斯坦 (Kazakhstan)", "UZ": "乌兹别克斯坦 (Uzbekistan)",
-    "PK": "巴基斯坦 (Pakistan)", "BD": "孟加拉 (Bangladesh)", "LK": "斯里兰卡 (Sri Lanka)",
-    "NP": "尼泊尔 (Nepal)", "MM": "缅甸 (Myanmar)", "KH": "柬埔寨 (Cambodia)",
-    "LA": "老挝 (Laos)", "NZ": "新西兰 (New Zealand)", "EE": "爱沙尼亚 (Estonia)",
-    "LV": "拉脱维亚 (Latvia)", "LT": "立陶宛 (Lithuania)", "BG": "保加利亚 (Bulgaria)",
-    "RS": "塞尔维亚 (Serbia)", "HR": "克罗地亚 (Croatia)", "SK": "斯洛伐克 (Slovakia)",
-    "SI": "斯洛文尼亚 (Slovenia)", "IS": "冰岛 (Iceland)", "LU": "卢森堡 (Luxembourg)",
-    "MT": "马耳他 (Malta)", "CY": "塞浦路斯 (Cyprus)", "GE": "格鲁吉亚 (Georgia)",
-    "AM": "亚美尼亚 (Armenia)", "AZ": "阿塞拜疆 (Azerbaijan)", "MD": "摩尔多瓦 (Moldova)",
-    "BY": "白俄罗斯 (Belarus)", "SC": "塞舌尔 (Seychelles)", "OTHER": "其他地区 (Other)",
+    "HK": "中国香港", "TW": "中国台湾", "JP": "日本",
+    "SG": "新加坡", "US": "美国", "KR": "韩国",
+    "DE": "德国", "GB": "英国", "CA": "加拿大",
+    "FR": "法国", "NL": "荷兰", "RU": "俄罗斯",
+    "IN": "印度", "AU": "澳大利亚", "IT": "意大利",
+    "ES": "西班牙", "TR": "土耳其", "AE": "阿联酋",
+    "BR": "巴西", "MY": "马来西亚", "TH": "泰国",
+    "VN": "越南", "PH": "菲律宾", "ID": "印尼",
+    "MX": "墨西哥", "AR": "阿根廷", "CL": "智利",
+    "CO": "哥伦比亚", "PE": "秘鲁", "ZA": "南非",
+    "EG": "埃及", "KE": "肯尼亚", "NG": "尼日利亚",
+    "UA": "乌克兰", "PL": "波兰", "SE": "瑞典",
+    "NO": "挪威", "FI": "芬兰", "DK": "丹麦",
+    "CH": "瑞士", "AT": "奥地利", "BE": "比利时",
+    "IE": "爱尔兰", "PT": "葡萄牙", "GR": "希腊",
+    "CZ": "捷克", "RO": "罗马尼亚", "HU": "匈牙利",
+    "IL": "以色列", "SA": "沙特", "QA": "卡塔尔",
+    "KZ": "哈萨克斯坦", "UZ": "乌兹别克斯坦",
+    "PK": "巴基斯坦", "BD": "孟加拉", "LK": "斯里兰卡",
+    "NP": "尼泊尔", "MM": "缅甸", "KH": "柬埔寨",
+    "LA": "老挝", "NZ": "新西兰", "EE": "爱沙尼亚",
+    "LV": "拉脱维亚", "LT": "立陶宛", "BG": "保加利亚",
+    "RS": "塞尔维亚", "HR": "克罗地亚", "SK": "斯洛伐克",
+    "SI": "斯洛文尼亚", "IS": "冰岛", "LU": "卢森堡",
+    "MT": "马耳他", "CY": "塞浦路斯", "GE": "格鲁吉亚",
+    "AM": "亚美尼亚", "AZ": "阿塞拜疆", "MD": "摩尔多瓦",
+    "BY": "白俄罗斯", "SC": "塞舌尔", "OTHER": "其他地区 (Other)",
 }
 
 
@@ -2178,7 +2178,7 @@ def make_node_name(item, idx, force_residential=False):
     # Scamalytics 风控分: 高风险节点名内标注 (R分数), 低危不标 (保持简洁)
     fraud = item.get("fraud_score", -1)
     risk_tag = f" R{fraud}" if 0 <= fraud < 75 and fraud >= 40 else (" ⚠R" if fraud >= 75 else "")
-    return f"{flag} {cname} {idx:02d}{tag}{risk_tag} - cp"
+    return f"{flag} {cname} {idx:02d}{tag}{risk_tag}|cp甄选"
 
 
 def export_all(unique_nodes, residential, non_residential):
@@ -2335,7 +2335,7 @@ def update_readme(total_count, res_count):
 
     readme = f"""# 🚀 免费节点自动测活订阅池 (含真实家宽/住宅IP甄选)
 
-> 👤 **定制规范命名**: 所有订阅节点均重命名为 `国旗 地区 序号 (家宽) - cp`
+> 👤 **定制规范命名**: 所有订阅节点均重命名为 `国旗 地区 序号 (家宽)|cp甄选`
 > ⚡ **真实可用保障**: 所有节点由 `sing-box v{SINGBOX_VERSION}` 内核建立实际代理隧道, 完成真实 HTTPS 双向传输握手 + 出口 IP 穿透验证 + Cloudflare 限速下载断流检测 + TLS 证书校验 (MITM 劫持识别), 拒绝虚假通畅、断流节点与高危劫持节点。
 > 🛡️ **全协议支持**: VLESS (Reality/Vision) · VMESS · Trojan · Shadowsocks · Hysteria2 · TUIC · AnyTLS
 
