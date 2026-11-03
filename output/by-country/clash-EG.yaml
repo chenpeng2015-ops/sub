@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇬 埃及 (Egypt) 01 - cp
+- name: 🇪🇬 埃及 01|cp甄选
   server: 38.54.59.102
   port: 443
   udp: true
@@ -16,12 +16,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇪🇬 埃及 (Egypt) 01 - cp
+  - 🇪🇬 埃及 01|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇬 埃及 (Egypt) 01 - cp
+  - 🇪🇬 埃及 01|cp甄选
 rules:
 - MATCH,PROXIES

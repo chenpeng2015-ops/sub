@@ -4,33 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 德国 (Germany) 01 - cp
-  server: 188.114.96.0
-  port: 2096
-  udp: true
-  type: trojan
-  password: vP!XvZBNdw.e*ddSgmH!
-  sni: N0Q4xprJ2d4X4pRCQ29l8JkcZd0.paGES.DeV
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/lqCTAonDgcErIZylZuNyy?ed=2560
-- name: 🇩🇪 德国 (Germany) 02 - cp
-  server: 185.226.172.8
-  port: 8008
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 03 - cp
-  server: 185.176.204.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国 (Germany) 04 - cp
-  server: 163.245.42.157
+- name: 🇩🇪 德国 01|cp甄选
+  server: 9.247.23.209
   port: 443
   udp: true
   type: vless
@@ -41,22 +16,19 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: mother-earth.fyi
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 05 - cp
-  server: 193.108.119.193
+- name: 🇩🇪 德国 02|cp甄选
+  server: 9.247.23.209
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.iloverussia2026.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 06 - cp
-  server: 169.150.210.233
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 07 - cp
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 03|cp甄选
   server: edge.bookmai.com
   port: 443
   udp: true
@@ -68,39 +40,7 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: mother-earth.fyi
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 08 - cp
-  server: 9.247.23.209
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 09 - cp
-  server: 9.247.23.209
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 10 - cp
-  server: 193.108.119.96
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.iloverussia2026.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 11 - cp
+- name: 🇩🇪 德国 04|cp甄选
   server: 157.90.165.181
   port: 11762
   udp: true
@@ -112,14 +52,7 @@ proxies:
     public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU
   servername: swdist.apple.com
   client-fingerprint: ''
-- name: 🇩🇪 德国 (Germany) 12 - cp
-  server: 146.70.20.147
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 13 - cp
+- name: 🇩🇪 德国 05|cp甄选
   server: 88.99.213.222
   port: 14444
   udp: true
@@ -127,49 +60,15 @@ proxies:
   password: mhsl
   sni: bing.com
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 14 - cp
-  server: 91.107.169.224
-  port: 80
+- name: 🇩🇪 德国 06|cp甄选
+  server: 136.244.91.14
+  port: 51520
   udp: true
-  type: vmess
-  uuid: d4b69108-f756-48af-a331-e8356bc95eb4
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
-- name: 🇩🇪 德国 (Germany) 15 - cp
-  server: 150.241.79.124
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dlhvkjq7Sj-TT__FLwUJzFLMDCk8bgi85Uz4qDU-5FM
-    short-id: 5212dad2aa9723d7
-  servername: de1.waspnest.space
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 16 - cp
-  server: 163.245.42.132
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 17 - cp
-  server: steel7.hadsvpn.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 23c82941-70f4-4381-90db-bd28e9a902e9
-  sni: steel7.hadsvpn.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 18 - cp
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: de001.zestapp778.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 07|cp甄选
   server: 5.252.179.15
   port: 443
   udp: true
@@ -181,34 +80,56 @@ proxies:
     public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
     short-id: 296f27de82dad7ff
   servername: www.bing.com
-  client-fingerprint: qq
-- name: 🇩🇪 德国 (Germany) 19 - cp
-  server: d2.anonix.cloud
-  port: 8018
+  client-fingerprint: random
+- name: 🇩🇪 德国 08|cp甄选
+  server: 185.176.204.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 09|cp甄选
+  server: 146.70.20.147
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇩🇪 德国 10|cp甄选
+  server: 91.107.169.224
+  port: 80
   udp: true
   type: vmess
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  uuid: d4b69108-f756-48af-a331-e8356bc95eb4
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /websocket/transfer/gayporn
-    headers:
-      Host: shit.67133767.xyz
-- name: 🇩🇪 德国 (Germany) 20 - cp
-  server: 144.31.140.125
-  port: 8443
+  network: httpupgrade
+- name: 🇩🇪 德国 11|cp甄选
+  server: 57.129.41.216
+  port: 80
   udp: true
   type: vless
-  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: wgyw3OxZw4HEzedNdY_eHdcVkrtT7GEeZSHfzcZ8iDo
-    short-id: 168c15efac9df5fd
-  servername: twitch.tv
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 21 - cp
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 12|cp甄选
+  server: 185.226.172.8
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 13|cp甄选
+  server: 169.150.210.233
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇩🇪 德国 14|cp甄选
   server: 5.45.100.100
   port: 51511
   udp: true
@@ -216,21 +137,7 @@ proxies:
   password: miaoge110
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 22 - cp
-  server: 91.107.245.247
-  port: 465
-  udp: true
-  type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-  tls: true
-  servername: hw6.divarkhaghazi.com.
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
-- name: 🇩🇪 德国 (Germany) 23 - cp
+- name: 🇩🇪 德国 15|cp甄选
   server: 82.39.171.12
   port: 443
   udp: true
@@ -243,36 +150,7 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 24 - cp
-  server: 91.107.243.131
-  port: 465
-  udp: true
-  type: vless
-  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
-  tls: true
-  servername: hw14.roghanmo.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw14.roghanmo.com
-- name: 🇩🇪 德国 (Germany) 25 - cp
-  server: 47.245.134.84
-  port: 443
-  udp: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  tls: true
-  servername: xy1ej.stream-node-us.danfeng.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /danfeng?ed=2560
-    headers:
-      Host: xy1ej.stream-node-us.danfeng.qzz.io
-- name: 🇩🇪 德国 (Germany) 26 - cp
+- name: 🇩🇪 德国 16|cp甄选
   server: derfderf.ru
   port: 12824
   udp: true
@@ -280,91 +158,57 @@ proxies:
   password: d62s7ghfehm742us
   sni: derfderf.ru
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 27 - cp
-  server: 172.67.156.121
+- name: 🇩🇪 德国 17|cp甄选
+  server: free.sahanwickramasinghe.com
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
+  tls: true
+  servername: zoom.us
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 18|cp甄选
+  server: 193.108.119.193
   port: 443
   udp: true
-  type: vmess
-  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
-  alterId: 0
-  cipher: auto
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 19|cp甄选
+  server: news.zoom.us
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
   tls: true
-  servername: www.gptcloudai.com
+  servername: site.check-looks.space
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /truth
+    path: /
     headers:
-      Host: www.gptcloudai.com
-- name: 🇩🇪 德国 (Germany) 28 - cp
-  server: 13.140.94.191
+      Host: site.check-looks.space
+- name: 🇩🇪 德国 20|cp甄选
+  server: 903.rtgpu.com
   port: 443
   udp: true
   type: vless
-  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
-  flow: xtls-rprx-vision
+  uuid: c6438331-a79b-4471-fd5e-42c2eeac29fa
   tls: true
-  reality-opts:
-    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
-    short-id: 8f3c6e2a1b5d4f09
-  servername: tradingview.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 29 - cp
-  server: 3.76.221.4
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 3.76.221.4
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 30 - cp
-  server: 3.64.194.247
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-de-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 31 - cp
-  server: 3.69.232.199
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 32 - cp
-  server: 875f9760-be1a-4dfe-8c2b-3f080b5ab158.node1.runet.network
-  port: 20065
-  udp: true
-  type: vless
-  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 875f9760-be1a-4dfe-8c2b-3f080b5ab158.node1.runet.network
+  servername: 903.rtgpu.com
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 33 - cp
-  server: de001.zestapp778.com
-  port: 51520
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: de001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 34 - cp
-  server: iproxyland.beshdash.ir
-  port: 58545
-  udp: true
-  type: vless
-  uuid: 6324c880-9fe5-49f9-9e19-85c7961310e6
-  tls: true
-  reality-opts:
-    public-key: Hm9C1tP40Uc-a8e2NQBUUM_uCkKVts3Fcedoo8EI8xU
-    short-id: 9c2042
-  servername: lamssettings-pa.googleapis.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 35 - cp
+  network: ws
+  ws-opts:
+    path: /nmd2
+    headers:
+      Host: 903.rtgpu.com
+- name: 🇩🇪 德国 21|cp甄选
   server: 89.169.47.96
   port: 443
   udp: true
@@ -377,7 +221,64 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: VideoRenderer
-- name: 🇩🇪 德国 (Germany) 36 - cp
+- name: 🇩🇪 德国 22|cp甄选
+  server: 91.107.243.131
+  port: 465
+  udp: true
+  type: vless
+  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
+  tls: true
+  servername: hw14.roghanmo.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw14.roghanmo.com
+- name: 🇩🇪 德国 23|cp甄选
+  server: 13.140.94.191
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
+    short-id: 8f3c6e2a1b5d4f09
+  servername: tradingview.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 24|cp甄选
+  server: 163.245.41.48
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 6da2c981-8c77-4340-bda3-93399b7aea26
+  sni: blogs.blog-forme.ru
+  skip-cert-verify: false
+- name: 🇩🇪 德国 25|cp甄选
+  server: 2.31.22.130
+  port: 3939
+  udp: true
+  type: vless
+  uuid: 89683f75-80b0-4cdf-a9cb-a13b52a56a6c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dnnN66V_xqEbGoG5P8E_Zqk3TaZt2lM4SI9N7Ana7FA
+    short-id: d9a2600fdecd7be2
+  servername: ai.android
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 26|cp甄选
+  server: 193.108.119.96
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 27|cp甄选
   server: 91.107.244.35
   port: 465
   udp: true
@@ -386,105 +287,98 @@ proxies:
   tls: true
   servername: hw5.roghanmo.com
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /
-- name: 🇩🇪 德国 (Germany) 37 - cp
-  server: 91.107.179.0
-  port: 10105
+- name: 🇩🇪 德国 28|cp甄选
+  server: 45.129.242.56
+  port: 443
   udp: true
   type: vless
-  uuid: ad3f4a0a-a89f-498e-9869-a93c8fa185b1
+  uuid: ebdfaf99-41d8-4e48-8196-d54510ffb556
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es
-    short-id: 12e321badd07906e
-  servername: play.google.com
-  client-fingerprint: firefox
+    public-key: YURKlEQ3rap4KOXXGsVFZyYev2oDU2gCEbNTXPdKWRY
+    short-id: abcdef
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 29|cp甄选
+  server: 193.108.119.15
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.iloverussia2026.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 德国 (Germany) 01 - cp
-  - 🇩🇪 德国 (Germany) 02 - cp
-  - 🇩🇪 德国 (Germany) 03 - cp
-  - 🇩🇪 德国 (Germany) 04 - cp
-  - 🇩🇪 德国 (Germany) 05 - cp
-  - 🇩🇪 德国 (Germany) 06 - cp
-  - 🇩🇪 德国 (Germany) 07 - cp
-  - 🇩🇪 德国 (Germany) 08 - cp
-  - 🇩🇪 德国 (Germany) 09 - cp
-  - 🇩🇪 德国 (Germany) 10 - cp
-  - 🇩🇪 德国 (Germany) 11 - cp
-  - 🇩🇪 德国 (Germany) 12 - cp
-  - 🇩🇪 德国 (Germany) 13 - cp
-  - 🇩🇪 德国 (Germany) 14 - cp
-  - 🇩🇪 德国 (Germany) 15 - cp
-  - 🇩🇪 德国 (Germany) 16 - cp
-  - 🇩🇪 德国 (Germany) 17 - cp
-  - 🇩🇪 德国 (Germany) 18 - cp
-  - 🇩🇪 德国 (Germany) 19 - cp
-  - 🇩🇪 德国 (Germany) 20 - cp
-  - 🇩🇪 德国 (Germany) 21 - cp
-  - 🇩🇪 德国 (Germany) 22 - cp
-  - 🇩🇪 德国 (Germany) 23 - cp
-  - 🇩🇪 德国 (Germany) 24 - cp
-  - 🇩🇪 德国 (Germany) 25 - cp
-  - 🇩🇪 德国 (Germany) 26 - cp
-  - 🇩🇪 德国 (Germany) 27 - cp
-  - 🇩🇪 德国 (Germany) 28 - cp
-  - 🇩🇪 德国 (Germany) 29 - cp
-  - 🇩🇪 德国 (Germany) 30 - cp
-  - 🇩🇪 德国 (Germany) 31 - cp
-  - 🇩🇪 德国 (Germany) 32 - cp
-  - 🇩🇪 德国 (Germany) 33 - cp
-  - 🇩🇪 德国 (Germany) 34 - cp
-  - 🇩🇪 德国 (Germany) 35 - cp
-  - 🇩🇪 德国 (Germany) 36 - cp
-  - 🇩🇪 德国 (Germany) 37 - cp
+  - 🇩🇪 德国 01|cp甄选
+  - 🇩🇪 德国 02|cp甄选
+  - 🇩🇪 德国 03|cp甄选
+  - 🇩🇪 德国 04|cp甄选
+  - 🇩🇪 德国 05|cp甄选
+  - 🇩🇪 德国 06|cp甄选
+  - 🇩🇪 德国 07|cp甄选
+  - 🇩🇪 德国 08|cp甄选
+  - 🇩🇪 德国 09|cp甄选
+  - 🇩🇪 德国 10|cp甄选
+  - 🇩🇪 德国 11|cp甄选
+  - 🇩🇪 德国 12|cp甄选
+  - 🇩🇪 德国 13|cp甄选
+  - 🇩🇪 德国 14|cp甄选
+  - 🇩🇪 德国 15|cp甄选
+  - 🇩🇪 德国 16|cp甄选
+  - 🇩🇪 德国 17|cp甄选
+  - 🇩🇪 德国 18|cp甄选
+  - 🇩🇪 德国 19|cp甄选
+  - 🇩🇪 德国 20|cp甄选
+  - 🇩🇪 德国 21|cp甄选
+  - 🇩🇪 德国 22|cp甄选
+  - 🇩🇪 德国 23|cp甄选
+  - 🇩🇪 德国 24|cp甄选
+  - 🇩🇪 德国 25|cp甄选
+  - 🇩🇪 德国 26|cp甄选
+  - 🇩🇪 德国 27|cp甄选
+  - 🇩🇪 德国 28|cp甄选
+  - 🇩🇪 德国 29|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 (Germany) 01 - cp
-  - 🇩🇪 德国 (Germany) 02 - cp
-  - 🇩🇪 德国 (Germany) 03 - cp
-  - 🇩🇪 德国 (Germany) 04 - cp
-  - 🇩🇪 德国 (Germany) 05 - cp
-  - 🇩🇪 德国 (Germany) 06 - cp
-  - 🇩🇪 德国 (Germany) 07 - cp
-  - 🇩🇪 德国 (Germany) 08 - cp
-  - 🇩🇪 德国 (Germany) 09 - cp
-  - 🇩🇪 德国 (Germany) 10 - cp
-  - 🇩🇪 德国 (Germany) 11 - cp
-  - 🇩🇪 德国 (Germany) 12 - cp
-  - 🇩🇪 德国 (Germany) 13 - cp
-  - 🇩🇪 德国 (Germany) 14 - cp
-  - 🇩🇪 德国 (Germany) 15 - cp
-  - 🇩🇪 德国 (Germany) 16 - cp
-  - 🇩🇪 德国 (Germany) 17 - cp
-  - 🇩🇪 德国 (Germany) 18 - cp
-  - 🇩🇪 德国 (Germany) 19 - cp
-  - 🇩🇪 德国 (Germany) 20 - cp
-  - 🇩🇪 德国 (Germany) 21 - cp
-  - 🇩🇪 德国 (Germany) 22 - cp
-  - 🇩🇪 德国 (Germany) 23 - cp
-  - 🇩🇪 德国 (Germany) 24 - cp
-  - 🇩🇪 德国 (Germany) 25 - cp
-  - 🇩🇪 德国 (Germany) 26 - cp
-  - 🇩🇪 德国 (Germany) 27 - cp
-  - 🇩🇪 德国 (Germany) 28 - cp
-  - 🇩🇪 德国 (Germany) 29 - cp
-  - 🇩🇪 德国 (Germany) 30 - cp
-  - 🇩🇪 德国 (Germany) 31 - cp
-  - 🇩🇪 德国 (Germany) 32 - cp
-  - 🇩🇪 德国 (Germany) 33 - cp
-  - 🇩🇪 德国 (Germany) 34 - cp
-  - 🇩🇪 德国 (Germany) 35 - cp
-  - 🇩🇪 德国 (Germany) 36 - cp
-  - 🇩🇪 德国 (Germany) 37 - cp
+  - 🇩🇪 德国 01|cp甄选
+  - 🇩🇪 德国 02|cp甄选
+  - 🇩🇪 德国 03|cp甄选
+  - 🇩🇪 德国 04|cp甄选
+  - 🇩🇪 德国 05|cp甄选
+  - 🇩🇪 德国 06|cp甄选
+  - 🇩🇪 德国 07|cp甄选
+  - 🇩🇪 德国 08|cp甄选
+  - 🇩🇪 德国 09|cp甄选
+  - 🇩🇪 德国 10|cp甄选
+  - 🇩🇪 德国 11|cp甄选
+  - 🇩🇪 德国 12|cp甄选
+  - 🇩🇪 德国 13|cp甄选
+  - 🇩🇪 德国 14|cp甄选
+  - 🇩🇪 德国 15|cp甄选
+  - 🇩🇪 德国 16|cp甄选
+  - 🇩🇪 德国 17|cp甄选
+  - 🇩🇪 德国 18|cp甄选
+  - 🇩🇪 德国 19|cp甄选
+  - 🇩🇪 德国 20|cp甄选
+  - 🇩🇪 德国 21|cp甄选
+  - 🇩🇪 德国 22|cp甄选
+  - 🇩🇪 德国 23|cp甄选
+  - 🇩🇪 德国 24|cp甄选
+  - 🇩🇪 德国 25|cp甄选
+  - 🇩🇪 德国 26|cp甄选
+  - 🇩🇪 德国 27|cp甄选
+  - 🇩🇪 德国 28|cp甄选
+  - 🇩🇪 德国 29|cp甄选
 rules:
 - MATCH,PROXIES

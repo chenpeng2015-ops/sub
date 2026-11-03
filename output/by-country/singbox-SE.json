@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - cp",
+      "tag": "🇸🇪 瑞典 01|cp甄选",
       "server": "70.34.207.14",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -17,14 +17,28 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - cp",
-      "server": "192.142.23.46",
+      "tag": "🇸🇪 瑞典 02|cp甄选",
+      "server": "se.mimowhat.online",
       "server_port": 443,
-      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
+      "password": "769f34f0-1500-488f-b414-03bc90666502",
       "tls": {
         "enabled": true,
-        "server_name": "diffoscope.com",
+        "server_name": "se.mimowhat.online",
         "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 03|cp甄选",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
       }
     },
     {
@@ -32,16 +46,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - cp",
-        "🇸🇪 瑞典 (Sweden) 02 - cp"
+        "🇸🇪 瑞典 01|cp甄选",
+        "🇸🇪 瑞典 02|cp甄选",
+        "🇸🇪 瑞典 03|cp甄选"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - cp",
-        "🇸🇪 瑞典 (Sweden) 02 - cp"
+        "🇸🇪 瑞典 01|cp甄选",
+        "🇸🇪 瑞典 02|cp甄选",
+        "🇸🇪 瑞典 03|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

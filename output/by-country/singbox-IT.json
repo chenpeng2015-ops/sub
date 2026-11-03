@@ -5,63 +5,44 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 01 - cp",
-      "server": "202.50.253.63",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 02 - cp",
-      "server": "202.50.253.54",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 03 - cp",
-      "server": "202.50.253.36",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 04 - cp",
+      "tag": "🇮🇹 意大利 01|cp甄选",
       "server": "185.164.175.81",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 05 - cp",
-      "server": "202.50.253.27",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "type": "vless",
+      "tag": "🇮🇹 意大利 02|cp甄选",
+      "server": "91.201.67.245",
+      "server_port": 443,
+      "uuid": "5c32201a-6c0e-451b-8f0a-24b4bd40df59",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "files.porsche.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
+          "short_id": "1a2b3c4d"
+        }
+      }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 06 - cp",
-      "server": "202.50.253.72",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 07 - cp",
-      "server": "202.50.253.81",
+      "tag": "🇮🇹 意大利 03|cp甄选",
+      "server": "202.50.253.45",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 08 - cp",
+      "tag": "🇮🇹 意大利 04|cp甄选",
       "server": "57.131.38.163",
       "server_port": 2053,
       "uuid": "d4b08cd6-0903-411a-9dac-45dbdf5c9712",
@@ -70,7 +51,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -81,7 +62,47 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 09 - cp",
+      "tag": "🇮🇹 意大利 05|cp甄选",
+      "server": "202.50.253.54",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 06|cp甄选",
+      "server": "202.50.253.27",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 07|cp甄选",
+      "server": "202.50.253.99",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 08|cp甄选",
+      "server": "202.50.253.81",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 09|cp甄选",
+      "server": "202.50.253.63",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 10|cp甄选",
       "server": "202.50.253.18",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -89,24 +110,24 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 10 - cp",
-      "server": "202.50.253.45",
+      "tag": "🇮🇹 意大利 11|cp甄选",
+      "server": "202.50.253.72",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 11 - cp",
+      "tag": "🇮🇹 意大利 12|cp甄选",
+      "server": "202.50.253.36",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 13|cp甄选",
       "server": "202.50.253.90",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 12 - cp",
-      "server": "202.50.253.99",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -116,36 +137,38 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 意大利 (Italy) 01 - cp",
-        "🇮🇹 意大利 (Italy) 02 - cp",
-        "🇮🇹 意大利 (Italy) 03 - cp",
-        "🇮🇹 意大利 (Italy) 04 - cp",
-        "🇮🇹 意大利 (Italy) 05 - cp",
-        "🇮🇹 意大利 (Italy) 06 - cp",
-        "🇮🇹 意大利 (Italy) 07 - cp",
-        "🇮🇹 意大利 (Italy) 08 - cp",
-        "🇮🇹 意大利 (Italy) 09 - cp",
-        "🇮🇹 意大利 (Italy) 10 - cp",
-        "🇮🇹 意大利 (Italy) 11 - cp",
-        "🇮🇹 意大利 (Italy) 12 - cp"
+        "🇮🇹 意大利 01|cp甄选",
+        "🇮🇹 意大利 02|cp甄选",
+        "🇮🇹 意大利 03|cp甄选",
+        "🇮🇹 意大利 04|cp甄选",
+        "🇮🇹 意大利 05|cp甄选",
+        "🇮🇹 意大利 06|cp甄选",
+        "🇮🇹 意大利 07|cp甄选",
+        "🇮🇹 意大利 08|cp甄选",
+        "🇮🇹 意大利 09|cp甄选",
+        "🇮🇹 意大利 10|cp甄选",
+        "🇮🇹 意大利 11|cp甄选",
+        "🇮🇹 意大利 12|cp甄选",
+        "🇮🇹 意大利 13|cp甄选"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 意大利 (Italy) 01 - cp",
-        "🇮🇹 意大利 (Italy) 02 - cp",
-        "🇮🇹 意大利 (Italy) 03 - cp",
-        "🇮🇹 意大利 (Italy) 04 - cp",
-        "🇮🇹 意大利 (Italy) 05 - cp",
-        "🇮🇹 意大利 (Italy) 06 - cp",
-        "🇮🇹 意大利 (Italy) 07 - cp",
-        "🇮🇹 意大利 (Italy) 08 - cp",
-        "🇮🇹 意大利 (Italy) 09 - cp",
-        "🇮🇹 意大利 (Italy) 10 - cp",
-        "🇮🇹 意大利 (Italy) 11 - cp",
-        "🇮🇹 意大利 (Italy) 12 - cp"
+        "🇮🇹 意大利 01|cp甄选",
+        "🇮🇹 意大利 02|cp甄选",
+        "🇮🇹 意大利 03|cp甄选",
+        "🇮🇹 意大利 04|cp甄选",
+        "🇮🇹 意大利 05|cp甄选",
+        "🇮🇹 意大利 06|cp甄选",
+        "🇮🇹 意大利 07|cp甄选",
+        "🇮🇹 意大利 08|cp甄选",
+        "🇮🇹 意大利 09|cp甄选",
+        "🇮🇹 意大利 10|cp甄选",
+        "🇮🇹 意大利 11|cp甄选",
+        "🇮🇹 意大利 12|cp甄选",
+        "🇮🇹 意大利 13|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

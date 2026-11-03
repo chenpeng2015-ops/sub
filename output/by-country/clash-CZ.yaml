@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - cp
-  server: 198.16.113.222
-  port: 8443
+- name: 🇨🇿 捷克 01|cp甄选
+  server: 193.124.17.190
+  port: 443
   udp: true
   type: vless
-  uuid: 98a24806-141a-43d3-b094-bd66c4eb93b8
+  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
-    short-id: 69984b9e02545831
-  servername: www.apple.com
-  client-fingerprint: ''
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 8325360e8bd2
+  servername: www.foxsports.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - cp
+  - 🇨🇿 捷克 01|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - cp
+  - 🇨🇿 捷克 01|cp甄选
 rules:
 - MATCH,PROXIES

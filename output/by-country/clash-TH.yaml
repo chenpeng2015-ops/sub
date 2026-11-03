@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01 - cp
+- name: 🇹🇭 泰国 01|cp甄选
   server: 45.154.26.63
   port: 443
   udp: true
@@ -22,12 +22,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01 - cp
+  - 🇹🇭 泰国 01|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01 - cp
+  - 🇹🇭 泰国 01|cp甄选
 rules:
 - MATCH,PROXIES

@@ -4,39 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 - cp",
-      "server": "172.64.146.111",
-      "server_port": 443,
-      "uuid": "4d945644-69ab-47e0-98b3-d43a6313135d",
-      "tls": {
-        "enabled": true,
-        "server_name": "mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/SaXqikbSPA3ImtmZKAFin?ed=2560",
-        "headers": {
-          "Host": "mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 02 - cp",
-      "server": "141.98.101.181",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 03 - cp",
+      "tag": "🇬🇧 英国 01|cp甄选",
       "server": "185.176.206.9",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -44,23 +13,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 04 - cp",
-      "server": "104.239.12.81",
-      "server_port": 43385,
-      "method": "chacha20-ietf-poly1305",
-      "password": "AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 05 - cp",
-      "server": "185.4.115.146",
-      "server_port": 1353,
-      "method": "chacha20-ietf-poly1305",
-      "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
+      "tag": "🇬🇧 英国 02|cp甄选",
+      "server": "141.98.101.181",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 06 - cp",
+      "tag": "🇬🇧 英国 03|cp甄选",
       "server": "51.89.194.151",
       "server_port": 2053,
       "uuid": "8e790f25-1d71-4601-9fb0-d503931dcfca",
@@ -79,52 +40,28 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 07 - cp",
-      "server": "146.70.61.37",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 08 - cp",
-      "server": "51.38.71.147",
-      "server_port": 8443,
-      "uuid": "c08f0056-7a6d-4931-813b-aaa3cdd00aed",
+      "tag": "🇬🇧 英国 04|cp甄选",
+      "server": "23.81.36.148",
+      "server_port": 1222,
+      "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
       "tls": {
         "enabled": true,
-        "server_name": "node-uk.connectsuite.org",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
+        "server_name": "play.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE",
+          "short_id": "a25d0f"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 09 - cp",
-      "server": "98.98.207.163",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 10 - cp",
-      "server": "98.98.142.161",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 11 - cp",
+      "tag": "🇬🇧 英国 05|cp甄选",
       "server": "191.44.108.31",
       "server_port": 443,
       "uuid": "558b26f6-061b-4079-9b84-ca13b3e90ae3",
@@ -144,8 +81,80 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 06|cp甄选",
+      "server": "98.98.142.161",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 12 - cp",
+      "tag": "🇬🇧 英国 07|cp甄选",
+      "server": "51.38.71.147",
+      "server_port": 8443,
+      "uuid": "c08f0056-7a6d-4931-813b-aaa3cdd00aed",
+      "tls": {
+        "enabled": true,
+        "server_name": "node-uk.connectsuite.org",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 08|cp甄选",
+      "server": "98.98.207.163",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 09|cp甄选",
+      "server": "138.124.125.193",
+      "server_port": 10444,
+      "uuid": "e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+          "short_id": "8debcf36f1cc69ff"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇬🇧 英国 10|cp甄选",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "google.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 11|cp甄选",
       "server": "46.250.250.149",
       "server_port": 2053,
       "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
@@ -154,7 +163,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -164,95 +173,48 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 13 - cp",
-      "server": "51.38.71.147",
-      "server_port": 443,
-      "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58",
-      "tls": {
-        "enabled": true,
-        "server_name": "uk1.connectsuite.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn-cgi/ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 14 - cp",
-      "server": "87.239.249.137",
-      "server_port": 443,
-      "uuid": "67eb6b17-7797-4ded-bf52-423c4c5f6cbd",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.foxsports.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY",
-          "short_id": "91af08b1ce1f"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 15 - cp",
-      "server": "94.156.250.148",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
+      "tag": "🇬🇧 英国 12|cp甄选",
+      "server": "146.70.61.37",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 - cp",
-        "🇬🇧 英国 (United Kingdom) 02 - cp",
-        "🇬🇧 英国 (United Kingdom) 03 - cp",
-        "🇬🇧 英国 (United Kingdom) 04 - cp",
-        "🇬🇧 英国 (United Kingdom) 05 - cp",
-        "🇬🇧 英国 (United Kingdom) 06 - cp",
-        "🇬🇧 英国 (United Kingdom) 07 - cp",
-        "🇬🇧 英国 (United Kingdom) 08 - cp",
-        "🇬🇧 英国 (United Kingdom) 09 - cp",
-        "🇬🇧 英国 (United Kingdom) 10 - cp",
-        "🇬🇧 英国 (United Kingdom) 11 - cp",
-        "🇬🇧 英国 (United Kingdom) 12 - cp",
-        "🇬🇧 英国 (United Kingdom) 13 - cp",
-        "🇬🇧 英国 (United Kingdom) 14 - cp",
-        "🇬🇧 英国 (United Kingdom) 15 - cp"
+        "🇬🇧 英国 01|cp甄选",
+        "🇬🇧 英国 02|cp甄选",
+        "🇬🇧 英国 03|cp甄选",
+        "🇬🇧 英国 04|cp甄选",
+        "🇬🇧 英国 05|cp甄选",
+        "🇬🇧 英国 06|cp甄选",
+        "🇬🇧 英国 07|cp甄选",
+        "🇬🇧 英国 08|cp甄选",
+        "🇬🇧 英国 09|cp甄选",
+        "🇬🇧 英国 10|cp甄选",
+        "🇬🇧 英国 11|cp甄选",
+        "🇬🇧 英国 12|cp甄选"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 - cp",
-        "🇬🇧 英国 (United Kingdom) 02 - cp",
-        "🇬🇧 英国 (United Kingdom) 03 - cp",
-        "🇬🇧 英国 (United Kingdom) 04 - cp",
-        "🇬🇧 英国 (United Kingdom) 05 - cp",
-        "🇬🇧 英国 (United Kingdom) 06 - cp",
-        "🇬🇧 英国 (United Kingdom) 07 - cp",
-        "🇬🇧 英国 (United Kingdom) 08 - cp",
-        "🇬🇧 英国 (United Kingdom) 09 - cp",
-        "🇬🇧 英国 (United Kingdom) 10 - cp",
-        "🇬🇧 英国 (United Kingdom) 11 - cp",
-        "🇬🇧 英国 (United Kingdom) 12 - cp",
-        "🇬🇧 英国 (United Kingdom) 13 - cp",
-        "🇬🇧 英国 (United Kingdom) 14 - cp",
-        "🇬🇧 英国 (United Kingdom) 15 - cp"
+        "🇬🇧 英国 01|cp甄选",
+        "🇬🇧 英国 02|cp甄选",
+        "🇬🇧 英国 03|cp甄选",
+        "🇬🇧 英国 04|cp甄选",
+        "🇬🇧 英国 05|cp甄选",
+        "🇬🇧 英国 06|cp甄选",
+        "🇬🇧 英国 07|cp甄选",
+        "🇬🇧 英国 08|cp甄选",
+        "🇬🇧 英国 09|cp甄选",
+        "🇬🇧 英国 10|cp甄选",
+        "🇬🇧 英国 11|cp甄选",
+        "🇬🇧 英国 12|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
