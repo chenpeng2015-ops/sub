@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - cp
+  server: 179.198.49.218
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9CKMhiYPXEIfQh_XFbbN1GoBxeLxJkaar2wg9FZKfBo
+    short-id: 75fe71d16ccae610
+  servername: assets-44.topp-con.xyz
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 02 - cp
   server: 70.34.252.255
   port: 443
   udp: true
@@ -18,11 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - cp
+  - 🇵🇱 波兰 (Poland) 02 - cp
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - cp
+  - 🇵🇱 波兰 (Poland) 02 - cp
 rules:
 - MATCH,PROXIES

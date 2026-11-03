@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - cp
+  server: 185.4.115.149
+  port: 1346
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
+- name: 🇫🇮 芬兰 (Finland) 02 - cp
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -21,11 +28,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - cp
+  - 🇫🇮 芬兰 (Finland) 02 - cp
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - cp
+  - 🇫🇮 芬兰 (Finland) 02 - cp
 rules:
 - MATCH,PROXIES
