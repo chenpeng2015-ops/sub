@@ -1,7 +1,7 @@
 # 🚀 免费节点自动测活订阅池 (含真实家宽/住宅IP甄选)
 
 > 👤 **定制规范命名**: 所有订阅节点均重命名为 `国旗 地区 序号 (家宽) - cp`
-> ⚡ **真实可用保障**: 所有节点由 `sing-box vv1.14.0` 内核建立实际代理隧道, 完成真实 HTTPS 双向传输握手 + 出口 IP 穿透验证 + Cloudflare 限速下载断流检测 + TLS 证书校验 (MITM 劫持识别), 拒绝虚假通畅、断流节点与高危劫持节点。
+> ⚡ **真实可用保障**: 所有节点由 `sing-box v1.14.0` 内核建立实际代理隧道, 完成真实 HTTPS 双向传输握手 + 出口 IP 穿透验证 + Cloudflare 限速下载断流检测 + TLS 证书校验 (MITM 劫持识别), 拒绝虚假通畅、断流节点与高危劫持节点。
 > 🛡️ **全协议支持**: VLESS (Reality/Vision) · VMESS · Trojan · Shadowsocks · Hysteria2 · TUIC · AnyTLS
 
 ---
@@ -15,6 +15,18 @@
 | 📦 **sing-box (JSON 格式)** | `445` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/chenpeng2015-ops/sub@main/output/singbox.json?v=1793688379) | [官方 Raw 直链](https://raw.githubusercontent.com/chenpeng2015-ops/sub/main/output/singbox.json) |
 
 ---
+
+## 🌐 推荐：GitHub Pages 直链（不走 Cloudflare Worker）
+
+仓库已改公开并改名为 `sub`，订阅不再走 Cloudflare Worker，直接用 GitHub Pages，地址里没有 `output` 这一段（因为发布时上传的就是 `output` 目录本身）：
+
+| 客户端 / 格式 | GitHub Pages 直链 |
+| :--- | :--- |
+| 🚀 **Clash (YAML)** | https://chenpeng2015-ops.github.io/sub/clash.yaml |
+| ⚡ **V2RayN (Base64)** | https://chenpeng2015-ops.github.io/sub/v2ray.txt |
+| 📦 **sing-box (JSON)** | https://chenpeng2015-ops.github.io/sub/singbox.json |
+
+按国家 / 家宽的分订阅同理，把上面总表里的 `output/` 去掉即可，例如美国 V2RayN：`https://chenpeng2015-ops.github.io/sub/by-country/US.txt`，台湾家宽：`https://chenpeng2015-ops.github.io/sub/residential-by-country/TW.txt`。上面总表里的 jsDelivr / Raw 链接仍可用，作备用。
 
 ## 🏠 按照家宽分类节点订阅 (住宅 IP 专区)
 
@@ -75,61 +87,9 @@
 
 ---
 
-## 🔒 私有仓库（Private）无感免翻订阅方案 (基于 Cloudflare Workers)
+## 🔒 关于私有 / Worker 说明
 
-> 如果你希望将本 GitHub 仓库设置为 **Private (私有仓库)** 保护节点资产，外部客户端无法直接拉取原生 Raw 或公共 CDN 链接，可以通过以下 Cloudflare Worker 搭建轻量级私密网关反代：
-
-### 1. 获取 GitHub 永久个人令牌 (PAT)
-1. 进入 GitHub -> **Settings** -> **Developer Settings** -> **Personal access tokens (classic)**。
-2. 点击 **Generate new token (classic)**，勾选 `repo` 权限，有效期设为 `No expiration`（永不过期）。
-3. 复制保存生成的以 `ghp_` 开头的 Token。
-
-### 2. 部署 Cloudflare Worker
-登录 Cloudflare Dashboard，创建一个新的 Worker，复制以下脚本粘贴并部署（把 `OWNER`/`REPO`/`GITHUB_TOKEN` 改成你自己的）：
-
-```javascript
-export default {
-  async fetch(request) {
-    const GITHUB_TOKEN = "ghp_你的GitHub永久访问令牌";
-    const OWNER = "chenpeng2015-ops";
-    const REPO = "sub";
-    const BRANCH = "main";
-
-    const url = new URL(request.url);
-    const filePath = "output" + url.pathname;
-    const ghUrl = "https://raw.githubusercontent.com/" + OWNER + "/" + REPO + "/" + BRANCH + "/" + filePath;
-
-    const res = await fetch(ghUrl, {
-      headers: {
-        "Authorization": "token " + GITHUB_TOKEN,
-        "User-Agent": "Cloudflare-Worker"
-      }
-    });
-
-    if (!res.ok) {
-      return new Response("Not Found", { status: 404 });
-    }
-
-    return new Response(await res.text(), {
-      headers: {
-        "Content-Type": "text/plain; charset=utf-8",
-        "Cache-Control": "no-cache"
-      }
-    });
-  }
-}
-```
-
-### 3. 私有订阅链接映射方式
-部署后 Worker 会分配一个专属域名（例如 `my-sub.yourname.workers.dev`），你的客户端可以直接无感订阅：
-* **总 V2RayN 订阅**: `https://你的域名.workers.dev/v2ray.txt`
-* **总 Clash 订阅**: `https://你的域名.workers.dev/clash.yaml`
-* **总 sing-box 订阅**: `https://你的域名.workers.dev/singbox.json`
-* **台湾家宽 V2RayN**: `https://你的域名.workers.dev/residential-by-country/TW.txt`
-* **香港家宽 Clash**: `https://你的域名.workers.dev/residential-by-country/clash-HK.yaml`
-* **日本家宽 sing-box**: `https://你的域名.workers.dev/residential-by-country/singbox-JP.json`
-
----
+本仓库现已公开，不再走 Cloudflare Worker，也不再用 GitHub Token 反代私有仓库。上面“私有仓库无感免翻订阅方案”那段已删除：不要再把 Token 写进 Worker 代码里，那样一旦 Worker 域名泄露就等于把 Token 也泄露了。原来那个 `free` Worker 在切换到 Pages 订阅后即可删除。
 
 ## ⭐ 项目热度
 
@@ -138,6 +98,6 @@ export default {
 ---
 
 ## 🛠️ 项目使用说明
-1. **自动更新机制**：GitHub Actions 每 6 小时全自动运行并刷新上述全部订阅与数据。
+1. **自动更新机制**：GitHub Actions 每天北京时间 08:00 和 20:00 自动运行并刷新上述全部订阅与数据（工作流定时为 UTC 0 点、12 点）。
 2. **测活标准**：节点必须通过 ① 端口预检 ② sing-box 实际隧道 3 个 generate_204 探测 ③ 真实出口 IP 穿透获取 ④ Cloudflare 5MB 限时下载 (吞吐 ≥ 70KB/s) ⑤ TLS 证书校验非 MITM, 方可入库。
 3. **多客户端兼容**：Clash / v2rayN / sing-box 全格式订阅。
