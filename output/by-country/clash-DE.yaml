@@ -5,117 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - cp
-  server: 104.18.41.145
-  port: 443
+  server: 188.114.96.0
+  port: 2096
   udp: true
-  type: vless
-  uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
-  tls: true
-  servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
+  type: trojan
+  password: vP!XvZBNdw.e*ddSgmH!
+  sni: N0Q4xprJ2d4X4pRCQ29l8JkcZd0.paGES.DeV
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560
-    headers:
-      Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
+    path: /tr/lqCTAonDgcErIZylZuNyy?ed=2560
 - name: 🇩🇪 德国 (Germany) 02 - cp
-  server: 169.150.210.233
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 03 - cp
   server: 185.226.172.8
   port: 8008
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 04 - cp
-  server: 172.64.146.111
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
-  tls: true
-  servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560
-    headers:
-      Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
-- name: 🇩🇪 德国 (Germany) 05 - cp
-  server: edge.bookmai.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 06 - cp
-  server: 88.99.213.222
-  port: 14444
-  udp: true
-  type: hysteria2
-  password: mhsl
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 07 - cp
-  server: 163.245.42.132
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 08 - cp
+- name: 🇩🇪 德国 (Germany) 03 - cp
   server: 185.176.204.18
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国 (Germany) 09 - cp
-  server: 193.108.119.193
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.iloverussia2026.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 10 - cp
-  server: 5.252.179.15
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  servername: www.bing.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 11 - cp
-  server: 146.70.20.147
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 12 - cp
+- name: 🇩🇪 德国 (Germany) 04 - cp
   server: 163.245.42.157
   port: 443
   udp: true
@@ -127,20 +41,66 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: mother-earth.fyi
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 13 - cp
-  server: 144.31.140.125
-  port: 8443
+- name: 🇩🇪 德国 (Germany) 05 - cp
+  server: 193.108.119.193
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 06 - cp
+  server: 169.150.210.233
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇩🇪 德国 (Germany) 07 - cp
+  server: edge.bookmai.com
+  port: 443
   udp: true
   type: vless
-  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: wgyw3OxZw4HEzedNdY_eHdcVkrtT7GEeZSHfzcZ8iDo
-    short-id: 168c15efac9df5fd
-  servername: twitch.tv
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 14 - cp
+- name: 🇩🇪 德国 (Germany) 08 - cp
+  server: 9.247.23.209
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 09 - cp
+  server: 9.247.23.209
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 10 - cp
+  server: 193.108.119.96
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 11 - cp
   server: 157.90.165.181
   port: 11762
   udp: true
@@ -151,7 +111,31 @@ proxies:
   reality-opts:
     public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU
   servername: swdist.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: ''
+- name: 🇩🇪 德国 (Germany) 12 - cp
+  server: 146.70.20.147
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇩🇪 德国 (Germany) 13 - cp
+  server: 88.99.213.222
+  port: 14444
+  udp: true
+  type: hysteria2
+  password: mhsl
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 14 - cp
+  server: 91.107.169.224
+  port: 80
+  udp: true
+  type: vmess
+  uuid: d4b69108-f756-48af-a331-e8356bc95eb4
+  alterId: 0
+  cipher: auto
+  network: httpupgrade
 - name: 🇩🇪 德国 (Germany) 15 - cp
   server: 150.241.79.124
   port: 443
@@ -166,13 +150,17 @@ proxies:
   servername: de1.waspnest.space
   client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 16 - cp
-  server: 5.45.100.100
-  port: 51511
+  server: 163.245.42.132
+  port: 443
   udp: true
-  type: hysteria2
-  password: miaoge110
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 17 - cp
   server: steel7.hadsvpn.com
   port: 443
@@ -182,6 +170,19 @@ proxies:
   sni: steel7.hadsvpn.com
   skip-cert-verify: false
 - name: 🇩🇪 德国 (Germany) 18 - cp
+  server: 5.252.179.15
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  servername: www.bing.com
+  client-fingerprint: qq
+- name: 🇩🇪 德国 (Germany) 19 - cp
   server: d2.anonix.cloud
   port: 8018
   udp: true
@@ -194,70 +195,29 @@ proxies:
     path: /websocket/transfer/gayporn
     headers:
       Host: shit.67133767.xyz
-- name: 🇩🇪 德国 (Germany) 19 - cp
-  server: 9.247.23.209
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 20 - cp
-  server: 9.247.23.209
-  port: 443
+  server: 144.31.140.125
+  port: 8443
   udp: true
   type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
+    public-key: wgyw3OxZw4HEzedNdY_eHdcVkrtT7GEeZSHfzcZ8iDo
+    short-id: 168c15efac9df5fd
+  servername: twitch.tv
   client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 21 - cp
-  server: 91.107.169.224
-  port: 80
-  udp: true
-  type: vmess
-  uuid: d4b69108-f756-48af-a331-e8356bc95eb4
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
-- name: 🇩🇪 德国 (Germany) 22 - cp
-  server: 13.140.94.191
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
-    short-id: 8f3c6e2a1b5d4f09
-  servername: tradingview.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 23 - cp
-  server: 193.108.119.96
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.iloverussia2026.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 24 - cp
-  server: 3.69.232.199
-  port: 443
+  server: 5.45.100.100
+  port: 51511
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
+  password: miaoge110
+  sni: www.bing.com
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 25 - cp
-  server: hw6.divarkhaghazi.com
+- name: 🇩🇪 德国 (Germany) 22 - cp
+  server: 91.107.245.247
   port: 465
   udp: true
   type: vless
@@ -265,20 +225,61 @@ proxies:
   tls: true
   servername: hw6.divarkhaghazi.com.
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
-- name: 🇩🇪 德国 (Germany) 26 - cp
-  server: 3.76.221.4
+- name: 🇩🇪 德国 (Germany) 23 - cp
+  server: 82.39.171.12
   port: 443
   udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 24 - cp
+  server: 91.107.243.131
+  port: 465
+  udp: true
+  type: vless
+  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
+  tls: true
+  servername: hw14.roghanmo.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw14.roghanmo.com
+- name: 🇩🇪 德国 (Germany) 25 - cp
+  server: 47.245.134.84
+  port: 443
+  udp: true
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  tls: true
+  servername: xy1ej.stream-node-us.danfeng.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: xy1ej.stream-node-us.danfeng.qzz.io
+- name: 🇩🇪 德国 (Germany) 26 - cp
+  server: derfderf.ru
+  port: 12824
+  udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 3.76.221.4
-  skip-cert-verify: true
+  password: d62s7ghfehm742us
+  sni: derfderf.ru
+  skip-cert-verify: false
 - name: 🇩🇪 德国 (Germany) 27 - cp
   server: 172.67.156.121
   port: 443
@@ -296,80 +297,27 @@ proxies:
     headers:
       Host: www.gptcloudai.com
 - name: 🇩🇪 德国 (Germany) 28 - cp
-  server: 82.39.171.12
+  server: 13.140.94.191
   port: 443
   udp: true
   type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
+    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
+    short-id: 8f3c6e2a1b5d4f09
+  servername: tradingview.com
   client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 29 - cp
-  server: 51.75.67.209
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 20d04f6e-797b-4814-b60a-3882be3b101b
-  tls: true
-  servername: microsoft.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: microsoft.com
-- name: 🇩🇪 德国 (Germany) 30 - cp
-  server: 91.107.243.131
-  port: 465
-  udp: true
-  type: vless
-  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
-  tls: true
-  servername: hw14.roghanmo.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw14.roghanmo.com
-- name: 🇩🇪 德国 (Germany) 31 - cp
-  server: nl198391278291.izzzyvpn.space
+  server: 3.76.221.4
   port: 443
   udp: true
-  type: vless
-  uuid: e7ee38d7-f8ad-4d14-a491-2d9e18011845
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ScuWSKQxJg4QKv3FUj39wy8ZsZlnu1WFPhMWxbpTFFk
-    short-id: b996df2f36a9ae6b
-  servername: nl198391278291.izzzyvpn.space
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 32 - cp
-  server: 57.129.41.216
-  port: 80
-  udp: true
-  type: vless
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 33 - cp
-  server: derfderf.ru
-  port: 12824
-  udp: true
   type: hysteria2
-  password: d62s7ghfehm742us
-  sni: derfderf.ru
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 34 - cp
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 3.76.221.4
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 30 - cp
   server: 3.64.194.247
   port: 443
   udp: true
@@ -377,21 +325,15 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-de-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 35 - cp
-  server: 104.17.70.206
-  port: 8443
+- name: 🇩🇪 德国 (Germany) 31 - cp
+  server: 3.69.232.199
+  port: 443
   udp: true
-  type: vless
-  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
-  tls: true
-  servername: free.sahanwickramasinghe.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 36 - cp
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 32 - cp
   server: 875f9760-be1a-4dfe-8c2b-3f080b5ab158.node1.runet.network
   port: 20065
   udp: true
@@ -402,7 +344,15 @@ proxies:
   servername: 875f9760-be1a-4dfe-8c2b-3f080b5ab158.node1.runet.network
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 37 - cp
+- name: 🇩🇪 德国 (Germany) 33 - cp
+  server: de001.zestapp778.com
+  port: 51520
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: de001.zestapp778.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 34 - cp
   server: iproxyland.beshdash.ir
   port: 58545
   udp: true
@@ -414,7 +364,20 @@ proxies:
     short-id: 9c2042
   servername: lamssettings-pa.googleapis.com
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 38 - cp
+- name: 🇩🇪 德国 (Germany) 35 - cp
+  server: 89.169.47.96
+  port: 443
+  udp: true
+  type: vless
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+  tls: true
+  servername: renderer-bridge-2-129.mirra.now
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: VideoRenderer
+- name: 🇩🇪 德国 (Germany) 36 - cp
   server: 91.107.244.35
   port: 465
   udp: true
@@ -423,19 +386,10 @@ proxies:
   tls: true
   servername: hw5.roghanmo.com
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /
-- name: 🇩🇪 德国 (Germany) 39 - cp
-  server: de001.zestapp778.com
-  port: 51520
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: de001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 40 - cp
+- name: 🇩🇪 德国 (Germany) 37 - cp
   server: 91.107.179.0
   port: 10105
   udp: true
@@ -490,9 +444,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 35 - cp
   - 🇩🇪 德国 (Germany) 36 - cp
   - 🇩🇪 德国 (Germany) 37 - cp
-  - 🇩🇪 德国 (Germany) 38 - cp
-  - 🇩🇪 德国 (Germany) 39 - cp
-  - 🇩🇪 德国 (Germany) 40 - cp
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -535,8 +486,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 35 - cp
   - 🇩🇪 德国 (Germany) 36 - cp
   - 🇩🇪 德国 (Germany) 37 - cp
-  - 🇩🇪 德国 (Germany) 38 - cp
-  - 🇩🇪 德国 (Germany) 39 - cp
-  - 🇩🇪 德国 (Germany) 40 - cp
 rules:
 - MATCH,PROXIES
