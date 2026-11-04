@@ -31,84 +31,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 03|cp甄选",
-      "server": "new-p33.vurneq.ir",
-      "server_port": 443,
-      "uuid": "de23f71d-a638-43d5-b0f7-d9f616077c9a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "delivery.mp.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XzPy2vjzBXPB5eC1cHEn37MRCCq47zYE-apfA1XUbhY",
-          "short_id": "51852ca8c115946e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 04|cp甄选",
-      "server": "84.23.52.120",
-      "server_port": 28447,
-      "uuid": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.sparxiecn.com",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lovelive"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 05|cp甄选",
-      "server": "84.23.52.120",
-      "server_port": 28448,
-      "uuid": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.sparxiecn.com",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lovelive"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇵🇱 波兰 01|cp甄选",
-        "🇵🇱 波兰 02|cp甄选",
-        "🇵🇱 波兰 03|cp甄选",
-        "🇵🇱 波兰 04|cp甄选",
-        "🇵🇱 波兰 05|cp甄选"
+        "🇵🇱 波兰 02|cp甄选"
       ]
     },
     {
@@ -116,10 +44,7 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 波兰 01|cp甄选",
-        "🇵🇱 波兰 02|cp甄选",
-        "🇵🇱 波兰 03|cp甄选",
-        "🇵🇱 波兰 04|cp甄选",
-        "🇵🇱 波兰 05|cp甄选"
+        "🇵🇱 波兰 02|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
