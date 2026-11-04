@@ -4,22 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 01|cp甄选",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇸🇪 瑞典 02|cp甄选",
+      "tag": "🇸🇪 瑞典 01|cp甄选",
       "server": "70.34.207.14",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -30,23 +16,30 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 02|cp甄选",
+      "server": "13.60.203.88",
+      "server_port": 11640,
+      "method": "chacha20-ietf-poly1305",
+      "password": "TfOlNVXwjXLEncsLTh4ucO"
+    },
+    {
       "type": "vless",
       "tag": "🇸🇪 瑞典 03|cp甄选",
-      "server": "89.125.37.1",
+      "server": "se3.shtil.io",
       "server_port": 443,
-      "uuid": "518079db-d88d-4035-bbf4-ddd1f9cf1e5f",
-      "flow": "xtls-rprx-vision",
+      "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
       "tls": {
         "enabled": true,
-        "server_name": "se.frgcdn.xyz",
+        "server_name": "se3.shtil.io",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q",
-          "short_id": "2d6d073dc88f22a8"
+          "fingerprint": "firefox"
         }
       }
     },
