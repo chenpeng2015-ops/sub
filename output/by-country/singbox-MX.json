@@ -12,6 +12,18 @@
       "tls": {
         "enabled": true,
         "server_name": "connectwithtopemployersandfindidealjobs.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇲🇽 墨西哥 02|cp甄选",
+      "server": "mx001.zestapp778.com",
+      "server_port": 15083,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "mx001.zestapp778.com",
         "insecure": false
       }
     },
@@ -20,14 +32,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 墨西哥 01|cp甄选"
+        "🇲🇽 墨西哥 01|cp甄选",
+        "🇲🇽 墨西哥 02|cp甄选"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 墨西哥 01|cp甄选"
+        "🇲🇽 墨西哥 01|cp甄选",
+        "🇲🇽 墨西哥 02|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
