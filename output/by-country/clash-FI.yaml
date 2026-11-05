@@ -16,19 +16,6 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 02|cp甄选
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 875942c6-1d42-4681-b49b-521a2bf10e8c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: timeline.www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 03|cp甄选
   server: 89.144.53.4
   port: 8445
   udp: true
@@ -41,8 +28,8 @@ proxies:
     short-id: 1a2b3c4d
   servername: videos.porsche.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 04|cp甄选
-  server: 104.18.0.1
+- name: 🇫🇮 芬兰 03|cp甄选
+  server: 104.24.0.1
   port: 2053
   udp: true
   type: trojan
@@ -60,7 +47,6 @@ proxy-groups:
   - 🇫🇮 芬兰 01|cp甄选
   - 🇫🇮 芬兰 02|cp甄选
   - 🇫🇮 芬兰 03|cp甄选
-  - 🇫🇮 芬兰 04|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,6 +55,5 @@ proxy-groups:
   - 🇫🇮 芬兰 01|cp甄选
   - 🇫🇮 芬兰 02|cp甄选
   - 🇫🇮 芬兰 03|cp甄选
-  - 🇫🇮 芬兰 04|cp甄选
 rules:
 - MATCH,PROXIES
