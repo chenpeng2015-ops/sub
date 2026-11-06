@@ -16,44 +16,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇨🇭 瑞士 02|cp甄选",
-      "server": "208.69.78.19",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yourultimateprofessionalcareerhub.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇨🇭 瑞士 03|cp甄选",
-      "server": "208.69.78.29",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "learn.yourultimateprofessionalcareerhub.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇨🇭 瑞士 04|cp甄选",
-      "server": "208.69.78.208",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "resources.yourultimateprofessionalcareerhub.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 05|cp甄选",
+      "tag": "🇨🇭 瑞士 02|cp甄选",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -74,46 +38,14 @@
     },
     {
       "type": "trojan",
-      "tag": "🇨🇭 瑞士 06|cp甄选",
-      "server": "208.69.78.60",
+      "tag": "🇨🇭 瑞士 03|cp甄选",
+      "server": "208.69.78.19",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.yourultimateprofessionalcareerhub.com",
+        "server_name": "www.yourultimateprofessionalcareerhub.com",
         "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇨🇭 瑞士 07|cp甄选",
-      "server": "208.69.78.33",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "courses.yourultimateprofessionalcareerhub.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 08|cp甄选",
-      "server": "208.69.78.217",
-      "server_port": 2053,
-      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
-          "short_id": "ad86e2d52ff40ebd"
-        }
       }
     },
     {
@@ -123,12 +55,7 @@
         "auto",
         "🇨🇭 瑞士 01|cp甄选",
         "🇨🇭 瑞士 02|cp甄选",
-        "🇨🇭 瑞士 03|cp甄选",
-        "🇨🇭 瑞士 04|cp甄选",
-        "🇨🇭 瑞士 05|cp甄选",
-        "🇨🇭 瑞士 06|cp甄选",
-        "🇨🇭 瑞士 07|cp甄选",
-        "🇨🇭 瑞士 08|cp甄选"
+        "🇨🇭 瑞士 03|cp甄选"
       ]
     },
     {
@@ -137,12 +64,7 @@
       "outbounds": [
         "🇨🇭 瑞士 01|cp甄选",
         "🇨🇭 瑞士 02|cp甄选",
-        "🇨🇭 瑞士 03|cp甄选",
-        "🇨🇭 瑞士 04|cp甄选",
-        "🇨🇭 瑞士 05|cp甄选",
-        "🇨🇭 瑞士 06|cp甄选",
-        "🇨🇭 瑞士 07|cp甄选",
-        "🇨🇭 瑞士 08|cp甄选"
+        "🇨🇭 瑞士 03|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

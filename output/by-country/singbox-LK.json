@@ -5,22 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇪 秘鲁 01|cp甄选",
-      "server": "134.185.81.5",
-      "server_port": 47881,
-      "uuid": "59b203b2-b1bc-4e9c-a9e5-ccb8f691bf72",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇱🇰 斯里兰卡 01|cp甄选",
+      "server": "141.193.213.20",
+      "server_port": 2087,
+      "uuid": "0ef68b97-f878-4cea-b756-c56ea3632851",
       "tls": {
         "enabled": true,
-        "server_name": "www.tesla.com",
+        "server_name": "free.vkehi.store",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4",
-          "short_id": "38d72071"
+          "fingerprint": "android"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "free.vkehi.store"
         }
       }
     },
@@ -29,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇪 秘鲁 01|cp甄选"
+        "🇱🇰 斯里兰卡 01|cp甄选"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇪 秘鲁 01|cp甄选"
+        "🇱🇰 斯里兰卡 01|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

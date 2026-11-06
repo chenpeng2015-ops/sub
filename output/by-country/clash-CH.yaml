@@ -13,30 +13,6 @@ proxies:
   sni: 'off'
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 02|cp甄选
-  server: 208.69.78.19
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 03|cp甄选
-  server: 208.69.78.29
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 04|cp甄选
-  server: 208.69.78.208
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 05|cp甄选
   server: 45.90.59.15
   port: 443
   udp: true
@@ -49,34 +25,14 @@ proxies:
     short-id: 19253fae84102271
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇭 瑞士 06|cp甄选
-  server: 208.69.78.60
+- name: 🇨🇭 瑞士 03|cp甄选
+  server: 208.69.78.19
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.yourultimateprofessionalcareerhub.com
+  sni: www.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 07|cp甄选
-  server: 208.69.78.33
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 08|cp甄选
-  server: 208.69.78.217
-  port: 2053
-  udp: true
-  type: vless
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  tls: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,11 +41,6 @@ proxy-groups:
   - 🇨🇭 瑞士 01|cp甄选
   - 🇨🇭 瑞士 02|cp甄选
   - 🇨🇭 瑞士 03|cp甄选
-  - 🇨🇭 瑞士 04|cp甄选
-  - 🇨🇭 瑞士 05|cp甄选
-  - 🇨🇭 瑞士 06|cp甄选
-  - 🇨🇭 瑞士 07|cp甄选
-  - 🇨🇭 瑞士 08|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,10 +49,5 @@ proxy-groups:
   - 🇨🇭 瑞士 01|cp甄选
   - 🇨🇭 瑞士 02|cp甄选
   - 🇨🇭 瑞士 03|cp甄选
-  - 🇨🇭 瑞士 04|cp甄选
-  - 🇨🇭 瑞士 05|cp甄选
-  - 🇨🇭 瑞士 06|cp甄选
-  - 🇨🇭 瑞士 07|cp甄选
-  - 🇨🇭 瑞士 08|cp甄选
 rules:
 - MATCH,PROXIES
