@@ -16,17 +16,6 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 02|cp甄选
-  server: 104.18.0.1
-  port: 2053
-  udp: true
-  type: trojan
-  password: gHQP0D7D15
-  sni: marvdasht.phonecomparisonblog.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇮 芬兰 03|cp甄选
   server: 217.144.188.185
   port: 443
   udp: true
@@ -38,6 +27,25 @@ proxies:
     public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
   servername: www.nordea.fi
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 03|cp甄选
+  server: 188.114.96.3
+  port: 2053
+  udp: true
+  type: trojan
+  password: gHQP0D7D15
+  sni: marvdasht.phonecomparisonblog.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇮 芬兰 04|cp甄选
+  server: 65.108.240.210
+  port: 39018
+  udp: true
+  type: vmess
+  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +54,7 @@ proxy-groups:
   - 🇫🇮 芬兰 01|cp甄选
   - 🇫🇮 芬兰 02|cp甄选
   - 🇫🇮 芬兰 03|cp甄选
+  - 🇫🇮 芬兰 04|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +63,6 @@ proxy-groups:
   - 🇫🇮 芬兰 01|cp甄选
   - 🇫🇮 芬兰 02|cp甄选
   - 🇫🇮 芬兰 03|cp甄选
+  - 🇫🇮 芬兰 04|cp甄选
 rules:
 - MATCH,PROXIES

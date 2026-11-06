@@ -25,6 +25,19 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 03|cp甄选
+  server: ru1.radiolumens.uk
+  port: 8445
+  udp: true
+  type: vless
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  tls: true
+  servername: ru1.radiolumens.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +45,7 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 01|cp甄选
   - 🇵🇱 波兰 02|cp甄选
+  - 🇵🇱 波兰 03|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +53,6 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 01|cp甄选
   - 🇵🇱 波兰 02|cp甄选
+  - 🇵🇱 波兰 03|cp甄选
 rules:
 - MATCH,PROXIES

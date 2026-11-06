@@ -6,25 +6,33 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 01|cp甄选",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "103.115.109.49",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 02|cp甄选",
       "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-tw-002.fastervpn.world",
+        "server_name": "127.0.0.1",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 02|cp甄选",
+      "server": "83.147.13.74",
+      "server_port": 8443,
+      "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.githubassets.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA",
+          "short_id": "4ad2e4e660550e43"
+        }
       }
     },
     {
@@ -49,54 +57,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 04|cp甄选",
-      "server": "n04.jinggai.online",
-      "server_port": 8443,
-      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
-      "tls": {
-        "enabled": true,
-        "server_name": "n04.jinggai.online",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/nvl-n04-ws/e0577fe8fd7c8823",
-        "headers": {
-          "Host": "n04.jinggai.online"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 05|cp甄选",
-      "server": "83.147.13.74",
-      "server_port": 8443,
-      "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.githubassets.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA",
-          "short_id": "4ad2e4e660550e43"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 01|cp甄选",
         "🇹🇼 中国台湾 02|cp甄选",
-        "🇹🇼 中国台湾 03|cp甄选",
-        "🇹🇼 中国台湾 04|cp甄选",
-        "🇹🇼 中国台湾 05|cp甄选"
+        "🇹🇼 中国台湾 03|cp甄选"
       ]
     },
     {
@@ -105,9 +72,7 @@
       "outbounds": [
         "🇹🇼 中国台湾 01|cp甄选",
         "🇹🇼 中国台湾 02|cp甄选",
-        "🇹🇼 中国台湾 03|cp甄选",
-        "🇹🇼 中国台湾 04|cp甄选",
-        "🇹🇼 中国台湾 05|cp甄选"
+        "🇹🇼 中国台湾 03|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
