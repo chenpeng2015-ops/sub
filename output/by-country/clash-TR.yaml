@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 01|cp甄选
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 02|cp甄选
   server: 62.133.63.45
   port: 8444
   udp: true
@@ -31,7 +19,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 03|cp甄选
+- name: 🇹🇷 土耳其 02|cp甄选
   server: tr1.japancase.site
   port: 443
   udp: true
@@ -43,7 +31,7 @@ proxies:
     public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
     short-id: 41ae8e266bc3346f
   servername: tr1.japancase.site
-  client-fingerprint: qq
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 01|cp甄选
   - 🇹🇷 土耳其 02|cp甄选
-  - 🇹🇷 土耳其 03|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 01|cp甄选
   - 🇹🇷 土耳其 02|cp甄选
-  - 🇹🇷 土耳其 03|cp甄选
 rules:
 - MATCH,PROXIES
