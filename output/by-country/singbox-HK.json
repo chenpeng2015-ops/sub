@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 01|cp甄选",
-      "server": "202.146.222.89",
+      "server": "165.154.63.139",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/clashv8",
-        "insecure": true
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ",
+          "short_id": "ca4aedd4"
+        }
       }
     },
     {
@@ -23,13 +32,25 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "t.me",
+        "server_name": "https://t.me/oneclickvpnkeys",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 03|cp甄选",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/clashv8🇨🇳",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 04|cp甄选",
       "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
@@ -44,23 +65,35 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 04|cp甄选",
-      "server": "165.154.63.139",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 05|cp甄选",
+      "server": "202.146.222.29",
       "server_port": 443,
-      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2рҹү",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 06|cp甄选",
+      "server": "dddz-3-z.473221.xyz",
+      "server_port": 13212,
+      "uuid": "65ec84f5-0dd4-4582-8b4f-592e50b22116",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
+        "server_name": "v1-dy.ixigua.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ",
-          "short_id": "ca4aedd4"
+          "public_key": "4VguZbm-S2NkLpi7gLDsQMv2eDXP2LucxsvTiEt98yY",
+          "short_id": "961f7127a015ba"
         }
       }
     },
@@ -72,7 +105,9 @@
         "🇭🇰 中国香港 01|cp甄选",
         "🇭🇰 中国香港 02|cp甄选",
         "🇭🇰 中国香港 03|cp甄选",
-        "🇭🇰 中国香港 04|cp甄选"
+        "🇭🇰 中国香港 04|cp甄选",
+        "🇭🇰 中国香港 05|cp甄选",
+        "🇭🇰 中国香港 06|cp甄选"
       ]
     },
     {
@@ -82,7 +117,9 @@
         "🇭🇰 中国香港 01|cp甄选",
         "🇭🇰 中国香港 02|cp甄选",
         "🇭🇰 中国香港 03|cp甄选",
-        "🇭🇰 中国香港 04|cp甄选"
+        "🇭🇰 中国香港 04|cp甄选",
+        "🇭🇰 中国香港 05|cp甄选",
+        "🇭🇰 中国香港 06|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
