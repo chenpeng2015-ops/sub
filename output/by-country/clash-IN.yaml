@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 01|cp甄选
-  server: in.smrtai.top
+  server: 178.212.35.198
   port: 443
   udp: true
   type: vless
@@ -15,7 +15,7 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 02|cp甄选
   server: 194.61.31.126
   port: 2053
@@ -29,19 +29,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 03|cp甄选
-  server: in1.japancase.site
-  port: 443
-  udp: true
-  type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lDBwW08dYwPP-7dVxYQ_clzfFwsDHLlclz9K2cEV6DM
-    short-id: df7b054cfc29800c
-  servername: in1.japancase.site
-  client-fingerprint: ios
-- name: 🇮🇳 印度 04|cp甄选
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -60,7 +47,6 @@ proxy-groups:
   - 🇮🇳 印度 01|cp甄选
   - 🇮🇳 印度 02|cp甄选
   - 🇮🇳 印度 03|cp甄选
-  - 🇮🇳 印度 04|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,6 +55,5 @@ proxy-groups:
   - 🇮🇳 印度 01|cp甄选
   - 🇮🇳 印度 02|cp甄选
   - 🇮🇳 印度 03|cp甄选
-  - 🇮🇳 印度 04|cp甄选
 rules:
 - MATCH,PROXIES
