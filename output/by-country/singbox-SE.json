@@ -39,20 +39,6 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 04|cp甄选",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 05|cp甄选",
       "server": "138.124.86.230",
       "server_port": 48115,
       "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
@@ -72,30 +58,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 06|cp甄选",
-      "server": "13.49.226.128",
-      "server_port": 2030,
-      "uuid": "4e77e7c4-f69a-6d3e-a594-70df90d943a9",
-      "tls": {
-        "enabled": true,
-        "server_name": "digikala.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kTv80K_UMRHdJ_WXN3ZEmT3AbZKIGlqRn8YTTcCGzFk",
-          "short_id": "4e597b33"
-        }
-      },
-      "transport": {
-        "type": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 07|cp甄选",
+      "tag": "🇸🇪 瑞典 05|cp甄选",
       "server": "194.104.94.141",
       "server_port": 443,
       "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
@@ -122,9 +85,7 @@
         "🇸🇪 瑞典 02|cp甄选",
         "🇸🇪 瑞典 03|cp甄选",
         "🇸🇪 瑞典 04|cp甄选",
-        "🇸🇪 瑞典 05|cp甄选",
-        "🇸🇪 瑞典 06|cp甄选",
-        "🇸🇪 瑞典 07|cp甄选"
+        "🇸🇪 瑞典 05|cp甄选"
       ]
     },
     {
@@ -135,9 +96,7 @@
         "🇸🇪 瑞典 02|cp甄选",
         "🇸🇪 瑞典 03|cp甄选",
         "🇸🇪 瑞典 04|cp甄选",
-        "🇸🇪 瑞典 05|cp甄选",
-        "🇸🇪 瑞典 06|cp甄选",
-        "🇸🇪 瑞典 07|cp甄选"
+        "🇸🇪 瑞典 05|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

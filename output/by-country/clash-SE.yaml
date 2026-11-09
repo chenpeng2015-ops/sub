@@ -31,17 +31,6 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 04|cp甄选
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 05|cp甄选
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -54,22 +43,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 06|cp甄选
-  server: 13.49.226.128
-  port: 2030
-  udp: true
-  type: vless
-  uuid: 4e77e7c4-f69a-6d3e-a594-70df90d943a9
-  tls: true
-  reality-opts:
-    public-key: kTv80K_UMRHdJ_WXN3ZEmT3AbZKIGlqRn8YTTcCGzFk
-    short-id: 4e597b33
-  servername: digikala.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇸🇪 瑞典 07|cp甄选
+- name: 🇸🇪 瑞典 05|cp甄选
   server: 194.104.94.141
   port: 443
   udp: true
@@ -89,8 +63,6 @@ proxy-groups:
   - 🇸🇪 瑞典 03|cp甄选
   - 🇸🇪 瑞典 04|cp甄选
   - 🇸🇪 瑞典 05|cp甄选
-  - 🇸🇪 瑞典 06|cp甄选
-  - 🇸🇪 瑞典 07|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -101,7 +73,5 @@ proxy-groups:
   - 🇸🇪 瑞典 03|cp甄选
   - 🇸🇪 瑞典 04|cp甄选
   - 🇸🇪 瑞典 05|cp甄选
-  - 🇸🇪 瑞典 06|cp甄选
-  - 🇸🇪 瑞典 07|cp甄选
 rules:
 - MATCH,PROXIES
