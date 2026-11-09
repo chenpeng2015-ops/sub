@@ -6,6 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 01|cp甄选",
+      "server": "151.241.19.29",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇪 阿联酋 02|cp甄选",
       "server": "151.241.19.36",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -13,7 +21,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 02|cp甄选",
+      "tag": "🇦🇪 阿联酋 03|cp甄选",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -26,14 +34,6 @@
         "type": "salamander",
         "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇦🇪 阿联酋 03|cp甄选",
-      "server": "151.241.19.29",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "vless",
@@ -64,6 +64,18 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 06|cp甄选",
+      "server": "sclass-00.catcat321.com",
+      "server_port": 20123,
+      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk.catxstar.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -72,7 +84,8 @@
         "🇦🇪 阿联酋 02|cp甄选",
         "🇦🇪 阿联酋 03|cp甄选",
         "🇦🇪 阿联酋 04|cp甄选",
-        "🇦🇪 阿联酋 05|cp甄选"
+        "🇦🇪 阿联酋 05|cp甄选",
+        "🇦🇪 阿联酋 06|cp甄选"
       ]
     },
     {
@@ -83,7 +96,8 @@
         "🇦🇪 阿联酋 02|cp甄选",
         "🇦🇪 阿联酋 03|cp甄选",
         "🇦🇪 阿联酋 04|cp甄选",
-        "🇦🇪 阿联酋 05|cp甄选"
+        "🇦🇪 阿联酋 05|cp甄选",
+        "🇦🇪 阿联酋 06|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

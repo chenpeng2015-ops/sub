@@ -5,42 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 01|cp甄选
-  server: 8.6.112.0
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 8eb92a78-ec8d-4ff6-8a2d-8b801367be87
-  tls: true
-  servername: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
-- name: 🇫🇮 芬兰 02|cp甄选
-  server: 177.202.75.56
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: fi1.obxodvpn.us
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 03|cp甄选
-  server: 129.101.102.168
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QjYksCdraKvxMG024774_EOZjxtIB7xHm3GYGx3oN1Y
-    short-id: c59bb8af70d9db1e
-  servername: fi3-edge.gacvpn.site
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 04|cp甄选
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -51,6 +15,22 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 芬兰 02|cp甄选
+  server: fi1.obxodvpn.us
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 03|cp甄选
+  server: 65.108.240.210
+  port: 39018
+  udp: true
+  type: vmess
+  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,7 +39,6 @@ proxy-groups:
   - 🇫🇮 芬兰 01|cp甄选
   - 🇫🇮 芬兰 02|cp甄选
   - 🇫🇮 芬兰 03|cp甄选
-  - 🇫🇮 芬兰 04|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,6 +47,5 @@ proxy-groups:
   - 🇫🇮 芬兰 01|cp甄选
   - 🇫🇮 芬兰 02|cp甄选
   - 🇫🇮 芬兰 03|cp甄选
-  - 🇫🇮 芬兰 04|cp甄选
 rules:
 - MATCH,PROXIES
