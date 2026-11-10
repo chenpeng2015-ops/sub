@@ -11,8 +11,8 @@
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "45.63.30.142",
-        "insecure": true
+        "server_name": "connectwithemployerstohireyouridealteam.com",
+        "insecure": false
       }
     },
     {
@@ -37,25 +37,12 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇦🇺 澳大利亚 03|cp甄选",
-      "server": "au.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "au.tronsg.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 01|cp甄选",
-        "🇦🇺 澳大利亚 02|cp甄选",
-        "🇦🇺 澳大利亚 03|cp甄选"
+        "🇦🇺 澳大利亚 02|cp甄选"
       ]
     },
     {
@@ -63,8 +50,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇺 澳大利亚 01|cp甄选",
-        "🇦🇺 澳大利亚 02|cp甄选",
-        "🇦🇺 澳大利亚 03|cp甄选"
+        "🇦🇺 澳大利亚 02|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

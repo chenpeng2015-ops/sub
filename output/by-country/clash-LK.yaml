@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 01|cp甄选
-  server: 170.114.46.6
+  server: 170.114.45.6
   port: 2096
   udp: true
   type: vless

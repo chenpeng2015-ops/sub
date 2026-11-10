@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 01|cp甄选
-  server: 151.241.19.29
+  server: 151.241.19.36
   port: 19999
   udp: true
   type: ss
@@ -22,13 +22,6 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 03|cp甄选
-  server: 151.241.19.36
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 04|cp甄选
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -37,7 +30,9 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 05|cp甄选
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 04|cp甄选
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -57,7 +52,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 02|cp甄选
   - 🇦🇪 阿联酋 03|cp甄选
   - 🇦🇪 阿联酋 04|cp甄选
-  - 🇦🇪 阿联酋 05|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,6 +61,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 02|cp甄选
   - 🇦🇪 阿联酋 03|cp甄选
   - 🇦🇪 阿联酋 04|cp甄选
-  - 🇦🇪 阿联酋 05|cp甄选
 rules:
 - MATCH,PROXIES

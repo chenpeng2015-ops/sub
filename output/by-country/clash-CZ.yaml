@@ -16,33 +16,18 @@ proxies:
     public-key: suK-MYTtZhJ9IJgsxPLTHLQadNotDqYslQcd5BNV_EQ
     short-id: 6aa50b0cc8d23464
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 02|cp甄选
-  server: 193.124.17.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: ee1716767f9b
-  servername: www.tradingview.com
-  client-fingerprint: random
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 01|cp甄选
-  - 🇨🇿 捷克 02|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 01|cp甄选
-  - 🇨🇿 捷克 02|cp甄选
 rules:
 - MATCH,PROXIES

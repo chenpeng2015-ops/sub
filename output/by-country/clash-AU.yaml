@@ -10,8 +10,8 @@ proxies:
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 45.63.30.142
-  skip-cert-verify: true
+  sni: connectwithemployerstohireyouridealteam.com
+  skip-cert-verify: false
 - name: 🇦🇺 澳大利亚 02|cp甄选
   server: 50.6.54.163
   port: 443
@@ -25,14 +25,6 @@ proxies:
     short-id: 26b26357bfcd59a1
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 03|cp甄选
-  server: au.tronsg.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: au.tronsg.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 01|cp甄选
   - 🇦🇺 澳大利亚 02|cp甄选
-  - 🇦🇺 澳大利亚 03|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 01|cp甄选
   - 🇦🇺 澳大利亚 02|cp甄选
-  - 🇦🇺 澳大利亚 03|cp甄选
 rules:
 - MATCH,PROXIES
