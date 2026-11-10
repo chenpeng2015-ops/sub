@@ -27,7 +27,7 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 02|cp甄选",
-      "server": "server.slavkiti.monster",
+      "server": "193.124.17.190",
       "server_port": 443,
       "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
       "flow": "xtls-rprx-vision",
@@ -36,7 +36,7 @@
         "server_name": "www.tradingview.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,

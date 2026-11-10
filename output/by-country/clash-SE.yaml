@@ -5,41 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 01|cp甄选
-  server: 70.34.212.124
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-- name: 🇸🇪 瑞典 02|cp甄选
-  server: 138.199.55.243
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇪 瑞典 03|cp甄选
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 04|cp甄选
-  server: 194.104.94.141
+  server: 70.34.207.14
   port: 443
   udp: true
-  type: vless
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  tls: true
-  servername: se3.shtil.io
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 05|cp甄选
+- name: 🇸🇪 瑞典 02|cp甄选
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -52,30 +25,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 06|cp甄选
-  server: mirinday385.dpdns.org
-  port: 8082
+- name: 🇸🇪 瑞典 03|cp甄选
+  server: 138.199.55.243
+  port: 19999
   udp: true
-  type: vless
-  uuid: a5ecffc2-6c54-4b08-9ea7-e9e14f8caadb
-  tls: true
-  servername: mirinday385.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: httpupgrade
-  httpupgrade-opts:
-    path: /am3rum
-    headers:
-      Host: ''
-- name: 🇸🇪 瑞典 07|cp甄选
-  server: 70.34.207.14
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 08|cp甄选
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇪 瑞典 04|cp甄选
   server: 95.143.196.97
   port: 443
   udp: true
@@ -83,16 +40,17 @@ proxies:
   password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
   sni: connect-se.mimowhat.online
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 09|cp甄选
-  server: p1.alonex.cc.cd
-  port: 8443
+- name: 🇸🇪 瑞典 05|cp甄选
+  server: 5.178.109.174
+  port: 14430
   udp: true
   type: vless
-  uuid: e51e6447-078d-4766-91b4-dfa84c3cb579
-  tls: true
-  servername: p1.alonex.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,10 +61,6 @@ proxy-groups:
   - 🇸🇪 瑞典 03|cp甄选
   - 🇸🇪 瑞典 04|cp甄选
   - 🇸🇪 瑞典 05|cp甄选
-  - 🇸🇪 瑞典 06|cp甄选
-  - 🇸🇪 瑞典 07|cp甄选
-  - 🇸🇪 瑞典 08|cp甄选
-  - 🇸🇪 瑞典 09|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -117,9 +71,5 @@ proxy-groups:
   - 🇸🇪 瑞典 03|cp甄选
   - 🇸🇪 瑞典 04|cp甄选
   - 🇸🇪 瑞典 05|cp甄选
-  - 🇸🇪 瑞典 06|cp甄选
-  - 🇸🇪 瑞典 07|cp甄选
-  - 🇸🇪 瑞典 08|cp甄选
-  - 🇸🇪 瑞典 09|cp甄选
 rules:
 - MATCH,PROXIES

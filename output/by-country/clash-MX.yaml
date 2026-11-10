@@ -5,13 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 墨西哥 01|cp甄选
+  server: 38.60.224.173
+  port: 32153
+  udp: true
+  type: vmess
+  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+  alterId: 0
+  cipher: auto
+- name: 🇲🇽 墨西哥 02|cp甄选
   server: 64.177.90.30
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: BWyPPTusFKhGgzKh
-- name: 🇲🇽 墨西哥 02|cp甄选
+- name: 🇲🇽 墨西哥 03|cp甄选
+  server: mx001.zestapp778.com
+  port: 15083
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: mx001.zestapp778.com
+  skip-cert-verify: false
+- name: 🇲🇽 墨西哥 04|cp甄选
   server: 216.238.80.100
   port: 443
   udp: true
@@ -26,6 +42,8 @@ proxy-groups:
   - AUTO
   - 🇲🇽 墨西哥 01|cp甄选
   - 🇲🇽 墨西哥 02|cp甄选
+  - 🇲🇽 墨西哥 03|cp甄选
+  - 🇲🇽 墨西哥 04|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -33,5 +51,7 @@ proxy-groups:
   proxies:
   - 🇲🇽 墨西哥 01|cp甄选
   - 🇲🇽 墨西哥 02|cp甄选
+  - 🇲🇽 墨西哥 03|cp甄选
+  - 🇲🇽 墨西哥 04|cp甄选
 rules:
 - MATCH,PROXIES

@@ -6,6 +6,30 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 01|cp甄选",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/clashv8🇨🇳",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 02|cp甄选",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 03|cp甄选",
       "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
@@ -21,31 +45,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 02|cp甄选",
-      "server": "202.146.222.174",
+      "tag": "🇭🇰 中国香港 04|cp甄选",
+      "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.174",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 03|cp甄选",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/clashv8",
+        "server_name": "202.146.222.29",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 04|cp甄选",
+      "tag": "🇭🇰 中国香港 05|cp甄选",
       "server": "43.161.193.181",
       "server_port": 443,
       "uuid": "280f4d33-69fb-4f0d-a4c3-fe0bf841009f",
@@ -62,18 +74,6 @@
           "public_key": "nf9eFC0yVVO-peA-wmZ1EEIwAaSstK2JN3tJV0WNJQE",
           "short_id": "8c994df3c4e175a4"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 05|cp甄选",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%80%d2%b9%d2%af",
-        "insecure": true
       }
     },
     {
