@@ -5,58 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 01|cp甄选
-  server: 2.26.6.1
-  port: 2087
-  udp: true
-  type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  tls: true
-  servername: 2.26.6.1
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 02|cp甄选
-  server: 201.58.189.105
-  port: 2083
-  udp: true
-  type: vless
-  uuid: d7ddade6-b7a0-4cab-a910-d5d5c378d98a
-  tls: true
-  reality-opts:
-    public-key: B7x5bYp-YhtLeH31zYcilpKFCkGTMe3jtSECSw-bMC4
-    short-id: 8bd80253
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: google.storage.v2.Storage
-- name: 🇵🇱 波兰 03|cp甄选
-  server: 2.26.224.174
+  server: 138.124.242.46
   port: 8443
   udp: true
   type: vless
-  uuid: a4e5f910-23f4-470f-82a7-ed9d7be71dec
-  flow: xtls-rprx-vision
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
   tls: true
-  reality-opts:
-    public-key: d6qmF8ibk_PxtDJPzSa7LKw9VUI_mZ59DrTvmW3RaFc
-    short-id: 10983e6c816181c2
-  servername: teamdocs.su
-  client-fingerprint: firefox
+  servername: pl2-edge.gacvpn.site
+  skip-cert-verify: false
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: connect-pl
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 波兰 01|cp甄选
-  - 🇵🇱 波兰 02|cp甄选
-  - 🇵🇱 波兰 03|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 01|cp甄选
-  - 🇵🇱 波兰 02|cp甄选
-  - 🇵🇱 波兰 03|cp甄选
 rules:
 - MATCH,PROXIES

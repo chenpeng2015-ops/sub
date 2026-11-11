@@ -20,16 +20,58 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
+  sni: https://t.me/clashv8
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 03|cp甄选
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: speedtest.tinkoff.ru
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 04|cp甄选
+  server: 39.109.111.23
+  port: 28675
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jgtiLXdCnQ9WRWMuu2gsuGQOQTCRZQpspnn228kjTSA
+    short-id: 9a79807253c040
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 05|cp甄选
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  sni: https%3a%2f%2ft.me%2fwangcai2
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 06|cp甄选
+  server: dog-hk.kunlun01dns.com
+  port: 21018
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 07|cp甄选
+  server: 103.172.116.201
+  port: 10103
+  udp: true
+  type: vless
+  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: mjWmmSvs0D3V3130FT7MVbRs94pPuWXR7ffaQ_3A4kU
+    short-id: f96b3b17a0f5b1fe
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +80,10 @@ proxy-groups:
   - 🇭🇰 中国香港 01|cp甄选
   - 🇭🇰 中国香港 02|cp甄选
   - 🇭🇰 中国香港 03|cp甄选
+  - 🇭🇰 中国香港 04|cp甄选
+  - 🇭🇰 中国香港 05|cp甄选
+  - 🇭🇰 中国香港 06|cp甄选
+  - 🇭🇰 中国香港 07|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +92,9 @@ proxy-groups:
   - 🇭🇰 中国香港 01|cp甄选
   - 🇭🇰 中国香港 02|cp甄选
   - 🇭🇰 中国香港 03|cp甄选
+  - 🇭🇰 中国香港 04|cp甄选
+  - 🇭🇰 中国香港 05|cp甄选
+  - 🇭🇰 中国香港 06|cp甄选
+  - 🇭🇰 中国香港 07|cp甄选
 rules:
 - MATCH,PROXIES

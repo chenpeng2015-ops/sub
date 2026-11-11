@@ -27,20 +27,82 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.89",
+        "server_name": "https://t.me/clashv8",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 03|cp甄选",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtest.tinkoff.ru",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 04|cp甄选",
+      "server": "39.109.111.23",
+      "server_port": 28675,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.lamer.com.hk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jgtiLXdCnQ9WRWMuu2gsuGQOQTCRZQpspnn228kjTSA",
+          "short_id": "9a79807253c040"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 05|cp甄选",
       "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.174",
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
         "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 06|cp甄选",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21018,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 07|cp甄选",
+      "server": "103.172.116.201",
+      "server_port": 10103,
+      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mjWmmSvs0D3V3130FT7MVbRs94pPuWXR7ffaQ_3A4kU",
+          "short_id": "f96b3b17a0f5b1fe"
+        }
       }
     },
     {
@@ -50,7 +112,11 @@
         "auto",
         "🇭🇰 中国香港 01|cp甄选",
         "🇭🇰 中国香港 02|cp甄选",
-        "🇭🇰 中国香港 03|cp甄选"
+        "🇭🇰 中国香港 03|cp甄选",
+        "🇭🇰 中国香港 04|cp甄选",
+        "🇭🇰 中国香港 05|cp甄选",
+        "🇭🇰 中国香港 06|cp甄选",
+        "🇭🇰 中国香港 07|cp甄选"
       ]
     },
     {
@@ -59,7 +125,11 @@
       "outbounds": [
         "🇭🇰 中国香港 01|cp甄选",
         "🇭🇰 中国香港 02|cp甄选",
-        "🇭🇰 中国香港 03|cp甄选"
+        "🇭🇰 中国香港 03|cp甄选",
+        "🇭🇰 中国香港 04|cp甄选",
+        "🇭🇰 中国香港 05|cp甄选",
+        "🇭🇰 中国香港 06|cp甄选",
+        "🇭🇰 中国香港 07|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

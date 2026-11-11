@@ -12,13 +12,10 @@ proxies:
   uuid: 46d221fa-e9b4-748c-4eae-019a88e42991
   tls: true
   servername: orbylume.my.to
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /tvpn-tor/is
-    headers:
-      Host: orbylume.my.to
 proxy-groups:
 - name: PROXIES
   type: select

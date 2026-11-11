@@ -12,18 +12,11 @@
       "tls": {
         "enabled": true,
         "server_name": "orbylume.my.to",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/tvpn-tor/is",
-        "headers": {
-          "Host": "orbylume.my.to"
-        }
+        "path": "/tvpn-tor/is"
       }
     },
     {
