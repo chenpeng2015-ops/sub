@@ -50,25 +50,74 @@
     {
       "type": "trojan",
       "tag": "🇪🇸 西班牙 05|cp甄选",
-      "server": "66.163.118.251",
+      "server": "66.163.118.203",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "resources.discovergreatjobsandadvanceyourcareer.com",
+        "server_name": "blog.discovergreatjobsandadvanceyourcareer.com",
         "insecure": true
       }
     },
     {
       "type": "trojan",
       "tag": "🇪🇸 西班牙 06|cp甄选",
-      "server": "66.163.118.62",
+      "server": "66.163.118.251",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "courses.discovergreatjobsandadvanceyourcareer.com",
+        "server_name": "resources.discovergreatjobsandadvanceyourcareer.com",
         "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 07|cp甄选",
+      "server": "66.163.118.115",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 08|cp甄选",
+      "server": "66.163.118.244",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 09|cp甄选",
+      "server": "7aa271t.es1.h1clayd.click",
+      "server_port": 443,
+      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "7aa271t.es1.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE",
+          "short_id": "42426c882c5fcd41"
+        }
       }
     },
     {
@@ -81,7 +130,10 @@
         "🇪🇸 西班牙 03|cp甄选",
         "🇪🇸 西班牙 04|cp甄选",
         "🇪🇸 西班牙 05|cp甄选",
-        "🇪🇸 西班牙 06|cp甄选"
+        "🇪🇸 西班牙 06|cp甄选",
+        "🇪🇸 西班牙 07|cp甄选",
+        "🇪🇸 西班牙 08|cp甄选",
+        "🇪🇸 西班牙 09|cp甄选"
       ]
     },
     {
@@ -93,7 +145,10 @@
         "🇪🇸 西班牙 03|cp甄选",
         "🇪🇸 西班牙 04|cp甄选",
         "🇪🇸 西班牙 05|cp甄选",
-        "🇪🇸 西班牙 06|cp甄选"
+        "🇪🇸 西班牙 06|cp甄选",
+        "🇪🇸 西班牙 07|cp甄选",
+        "🇪🇸 西班牙 08|cp甄选",
+        "🇪🇸 西班牙 09|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

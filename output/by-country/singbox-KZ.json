@@ -4,19 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇸 冰岛 01|cp甄选",
-      "server": "191.44.112.170",
-      "server_port": 443,
-      "uuid": "46d221fa-e9b4-748c-4eae-019a88e42991",
-      "tls": {
-        "enabled": true,
-        "server_name": "orbylume.my.to",
-        "insecure": true
-      },
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 01|cp甄选",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/tvpn-tor/is"
+        "path": "/vmess/"
       }
     },
     {
@@ -24,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇸 冰岛 01|cp甄选"
+        "🇰🇿 哈萨克斯坦 01|cp甄选"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇸 冰岛 01|cp甄选"
+        "🇰🇿 哈萨克斯坦 01|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
