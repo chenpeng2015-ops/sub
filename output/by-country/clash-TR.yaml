@@ -20,6 +20,22 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 02|cp甄选
+  server: sclass-b1.catcat321.com
+  port: 20028
+  udp: true
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: false
+- name: 🇹🇷 土耳其 03|cp甄选
+  server: sclass-b1.catcat321.com
+  port: 20027
+  udp: true
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 04|cp甄选
   server: 188.225.37.43
   port: 443
   udp: true
@@ -34,22 +50,6 @@ proxies:
     path: /api/boards/live
     headers:
       Host: torvani.cyou
-- name: 🇹🇷 土耳其 03|cp甄选
-  server: sclass-b1.catcat321.com
-  port: 20027
-  udp: true
-  type: trojan
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 04|cp甄选
-  server: sclass-b1.catcat321.com
-  port: 20028
-  udp: true
-  type: trojan
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-  skip-cert-verify: true
 - name: 🇹🇷 土耳其 05|cp甄选
   server: 151.241.226.201
   port: 2053
@@ -61,7 +61,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
