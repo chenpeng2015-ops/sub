@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 01|cp甄选",
-      "server": "202.50.253.27",
+      "server": "185.164.175.81",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -14,7 +14,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 02|cp甄选",
-      "server": "202.50.253.36",
+      "server": "202.50.253.90",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -30,14 +30,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 04|cp甄选",
-      "server": "202.50.253.18",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 05|cp甄选",
       "server": "202.50.253.54",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -45,23 +37,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 06|cp甄选",
-      "server": "202.50.253.72",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 07|cp甄选",
-      "server": "185.164.175.81",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 08|cp甄选",
+      "tag": "🇮🇹 意大利 05|cp甄选",
       "server": "202.50.253.63",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -69,23 +45,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 09|cp甄选",
-      "server": "202.50.253.81",
+      "tag": "🇮🇹 意大利 06|cp甄选",
+      "server": "202.50.253.27",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 10|cp甄选",
-      "server": "202.50.253.90",
+      "tag": "🇮🇹 意大利 07|cp甄选",
+      "server": "202.50.253.72",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 11|cp甄选",
+      "tag": "🇮🇹 意大利 08|cp甄选",
       "server": "202.50.253.99",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -93,24 +69,27 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 12|cp甄选",
-      "server": "149.50.215.234",
+      "tag": "🇮🇹 意大利 09|cp甄选",
+      "server": "202.50.253.36",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇹 意大利 13|cp甄选",
-      "server": "149.50.215.240",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 10|cp甄选",
+      "server": "202.50.253.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 11|cp甄选",
+      "server": "202.50.253.81",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "selector",
@@ -127,9 +106,7 @@
         "🇮🇹 意大利 08|cp甄选",
         "🇮🇹 意大利 09|cp甄选",
         "🇮🇹 意大利 10|cp甄选",
-        "🇮🇹 意大利 11|cp甄选",
-        "🇮🇹 意大利 12|cp甄选",
-        "🇮🇹 意大利 13|cp甄选"
+        "🇮🇹 意大利 11|cp甄选"
       ]
     },
     {
@@ -146,9 +123,7 @@
         "🇮🇹 意大利 08|cp甄选",
         "🇮🇹 意大利 09|cp甄选",
         "🇮🇹 意大利 10|cp甄选",
-        "🇮🇹 意大利 11|cp甄选",
-        "🇮🇹 意大利 12|cp甄选",
-        "🇮🇹 意大利 13|cp甄选"
+        "🇮🇹 意大利 11|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
