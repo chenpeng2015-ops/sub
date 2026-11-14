@@ -5,22 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 01|cp甄选
-  server: sclass-b1.catcat321.com
-  port: 20027
-  udp: true
-  type: trojan
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 02|cp甄选
   server: 157.254.38.210
   port: 20028
   udp: true
   type: trojan
   password: d7563108-615c-4338-a7bd-77f359869a4a
   sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 02|cp甄选
+  server: 94.184.37.198
+  port: 18409
+  udp: true
+  type: vless
+  uuid: d7b1a442-678d-4fe1-9fed-590698c3fba9
+  tls: true
+  servername: access.dastanacloud.ir
   skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 03|cp甄选
+  server: 157.254.38.210
+  port: 20027
+  udp: true
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: false
+- name: 🇹🇷 土耳其 04|cp甄选
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -40,6 +50,7 @@ proxy-groups:
   - 🇹🇷 土耳其 01|cp甄选
   - 🇹🇷 土耳其 02|cp甄选
   - 🇹🇷 土耳其 03|cp甄选
+  - 🇹🇷 土耳其 04|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +59,6 @@ proxy-groups:
   - 🇹🇷 土耳其 01|cp甄选
   - 🇹🇷 土耳其 02|cp甄选
   - 🇹🇷 土耳其 03|cp甄选
+  - 🇹🇷 土耳其 04|cp甄选
 rules:
 - MATCH,PROXIES

@@ -33,6 +33,16 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 03|cp甄选
+  server: 94.184.37.198
+  port: 18405
+  udp: true
+  type: vless
+  uuid: c4688f70-1bc7-4d7d-b7c8-70c901c1536d
+  tls: true
+  servername: access.dastanacloud.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 04|cp甄选
   server: 150.251.113.34
   port: 443
   udp: true
@@ -53,6 +63,7 @@ proxy-groups:
   - 🇵🇱 波兰 01|cp甄选
   - 🇵🇱 波兰 02|cp甄选
   - 🇵🇱 波兰 03|cp甄选
+  - 🇵🇱 波兰 04|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +72,6 @@ proxy-groups:
   - 🇵🇱 波兰 01|cp甄选
   - 🇵🇱 波兰 02|cp甄选
   - 🇵🇱 波兰 03|cp甄选
+  - 🇵🇱 波兰 04|cp甄选
 rules:
 - MATCH,PROXIES

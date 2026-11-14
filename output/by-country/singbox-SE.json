@@ -6,10 +6,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 01|cp甄选",
-      "server": "138.199.55.243",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "server": "creator.morteza1388m1122.ir",
+      "server_port": 29206,
+      "method": "chacha20-ietf-poly1305",
+      "password": "fQUUCljoCc"
     },
     {
       "type": "vless",
@@ -32,17 +32,35 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 03|cp甄选",
-      "server": "95.143.196.97",
-      "server_port": 443,
-      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
+      "server": "138.199.55.243",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 04|cp甄选",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 05|cp甄选",
+      "server": "94.184.37.198",
+      "server_port": 18408,
+      "uuid": "d7b1a442-678d-4fe1-9fed-590698c3fba9",
       "tls": {
         "enabled": true,
-        "server_name": "connect-se.mimowhat.online",
+        "server_name": "access.dastanacloud.ir",
         "insecure": false,
         "alpn": [
-          "h2",
           "http/1.1"
         ],
         "utls": {
@@ -52,14 +70,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 04|cp甄选",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -67,7 +77,8 @@
         "🇸🇪 瑞典 01|cp甄选",
         "🇸🇪 瑞典 02|cp甄选",
         "🇸🇪 瑞典 03|cp甄选",
-        "🇸🇪 瑞典 04|cp甄选"
+        "🇸🇪 瑞典 04|cp甄选",
+        "🇸🇪 瑞典 05|cp甄选"
       ]
     },
     {
@@ -77,7 +88,8 @@
         "🇸🇪 瑞典 01|cp甄选",
         "🇸🇪 瑞典 02|cp甄选",
         "🇸🇪 瑞典 03|cp甄选",
-        "🇸🇪 瑞典 04|cp甄选"
+        "🇸🇪 瑞典 04|cp甄选",
+        "🇸🇪 瑞典 05|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
