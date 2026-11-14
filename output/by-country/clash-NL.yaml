@@ -5,169 +5,169 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 01|cp甄选
-  server: 109.201.152.181
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-cfb
-  password: shadowsocks
-- name: 🇳🇱 荷兰 02|cp甄选
-  server: 82.38.31.206
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 03|cp甄选
-  server: 82.38.31.213
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 04|cp甄选
-  server: 82.38.31.187
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 05|cp甄选
-  server: 82.38.31.156
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 06|cp甄选
-  server: 82.38.31.184
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 07|cp甄选
-  server: 193.29.139.235
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 08|cp甄选
-  server: 82.38.31.220
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 09|cp甄选
-  server: 82.38.31.192
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 10|cp甄选
-  server: 82.38.31.162
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 11|cp甄选
-  server: 82.38.31.210
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 12|cp甄选
-  server: 82.38.31.215
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 13|cp甄选
-  server: 82.38.31.39
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 14|cp甄选
-  server: 82.38.31.201
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 15|cp甄选
-  server: 82.38.31.62
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 16|cp甄选
-  server: 82.38.31.48
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 17|cp甄选
-  server: 82.38.31.204
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 18|cp甄选
-  server: 193.29.139.168
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-- name: 🇳🇱 荷兰 19|cp甄选
-  server: 82.38.31.66
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 20|cp甄选
-  server: 177.177.215.45
-  port: 444
-  udp: true
-  type: vless
-  uuid: 254f28cb-d0c1-41e9-a06b-f2155213ff04
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ams2.shtil.io
-  skip-cert-verify: true
-- name: 🇳🇱 荷兰 21|cp甄选
   server: 82.38.31.61
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 22|cp甄选
-  server: 51.158.206.34
-  port: 23576
+- name: 🇳🇱 荷兰 02|cp甄选
+  server: 82.38.31.193
+  port: 8080
   udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 03|cp甄选
+  server: 82.38.31.220
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 04|cp甄选
+  server: 82.38.31.210
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 05|cp甄选
+  server: 82.38.31.195
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 06|cp甄选
+  server: 193.29.139.235
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 07|cp甄选
+  server: 82.38.31.212
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 08|cp甄选
+  server: 82.38.31.208
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 09|cp甄选
+  server: 82.38.31.47
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 10|cp甄选
+  server: 82.38.31.186
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 11|cp甄选
+  server: 82.38.31.62
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 12|cp甄选
+  server: 193.29.139.212
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+- name: 🇳🇱 荷兰 13|cp甄选
+  server: 82.38.31.198
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 14|cp甄选
+  server: 82.38.31.205
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 15|cp甄选
+  server: 178.83.185.156
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 16|cp甄选
+  server: 82.38.31.202
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 17|cp甄选
+  server: 82.38.31.215
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 18|cp甄选
+  server: 109.201.152.181
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-cfb
+  password: shadowsocks
+- name: 🇳🇱 荷兰 19|cp甄选
+  server: 82.38.31.39
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 20|cp甄选
+  server: 82.38.31.184
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 21|cp甄选
+  server: 212.34.137.105
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: shorts.blog-forme.ru
+  skip-cert-verify: true
+- name: 🇳🇱 荷兰 22|cp甄选
+  server: 82.38.31.162
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: 🇳🇱 荷兰 23|cp甄选
+  server: 66.163.127.154
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.indyourperfectremotetechjobfromthecomfortofhome.com
+  skip-cert-verify: true
+- name: 🇳🇱 荷兰 24|cp甄选
   server: 51.158.206.98
   port: 23576
   udp: true
@@ -179,22 +179,9 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 24|cp甄选
-  server: 51.158.206.86
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
+  client-fingerprint: ''
 - name: 🇳🇱 荷兰 25|cp甄选
-  server: 51.158.206.19
+  server: 51.158.206.97
   port: 23576
   udp: true
   type: vless
@@ -207,69 +194,6 @@ proxies:
   servername: fuck.rkn
   client-fingerprint: chrome
 - name: 🇳🇱 荷兰 26|cp甄选
-  server: 51.158.206.25
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: ''
-- name: 🇳🇱 荷兰 27|cp甄选
-  server: 51.158.206.20
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 28|cp甄选
-  server: 188.166.81.135
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇳🇱 荷兰 29|cp甄选
-  server: 51.158.206.97
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: ''
-- name: 🇳🇱 荷兰 30|cp甄选
-  server: 51.158.206.96
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 31|cp甄选
   server: 51.158.206.80
   port: 23576
   udp: true
@@ -282,8 +206,8 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 32|cp甄选
-  server: 51.158.206.8
+- name: 🇳🇱 荷兰 27|cp甄选
+  server: 51.158.206.96
   port: 23576
   udp: true
   type: vless
@@ -295,33 +219,14 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 33|cp甄选
-  server: 51.158.206.93
-  port: 23576
+- name: 🇳🇱 荷兰 28|cp甄选
+  server: 82.38.31.66
+  port: 8080
   udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 34|cp甄选
-  server: 130.12.242.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 35|cp甄选
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 29|cp甄选
   server: 51.158.206.12
   port: 23576
   udp: true
@@ -334,34 +239,215 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 36|cp甄选
-  server: 82.38.31.179
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 37|cp甄选
-  server: 104.171.135.229
+- name: 🇳🇱 荷兰 30|cp甄选
+  server: 66.163.127.225
   port: 443
   udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.indyourperfectremotetechjobfromthecomfortofhome.com
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 31|cp甄选
+  server: 51.158.206.29
+  port: 23576
+  udp: true
   type: vless
-  uuid: Fluffy_VPN-Oth8rOq3
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: mpo4BIcoWiMXAQGt5a8IJ4MFkPJQyLC50dO_bXzC7z0
-  servername: absolute-disaster.org
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 38|cp甄选
-  server: 82.38.31.198
+- name: 🇳🇱 荷兰 32|cp甄选
+  server: 66.163.127.155
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: indyourperfectremotetechjobfromthecomfortofhome.com
+  skip-cert-verify: true
+- name: 🇳🇱 荷兰 33|cp甄选
+  server: 66.163.127.215
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.indyourperfectremotetechjobfromthecomfortofhome.com
+  skip-cert-verify: true
+- name: 🇳🇱 荷兰 34|cp甄选
+  server: 177.177.215.45
+  port: 444
+  udp: true
+  type: vless
+  uuid: 254f28cb-d0c1-41e9-a06b-f2155213ff04
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ams2.shtil.io
+  skip-cert-verify: true
+- name: 🇳🇱 荷兰 35|cp甄选
+  server: 51.158.206.26
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 36|cp甄选
+  server: 51.158.206.8
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 37|cp甄选
+  server: 82.38.31.190
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 38|cp甄选
+  server: 51.158.206.86
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
 - name: 🇳🇱 荷兰 39|cp甄选
-  server: free-amsterdam-node-1.cloudwidecdn.com
+  server: 130.12.242.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 40|cp甄选
+  server: 51.158.206.87
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 41|cp甄选
+  server: 51.158.206.103
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 42|cp甄选
+  server: 188.166.81.135
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 43|cp甄选
+  server: 51.158.206.93
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 44|cp甄选
+  server: 51.158.206.20
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: ''
+- name: 🇳🇱 荷兰 45|cp甄选
+  server: 51.158.206.19
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: ''
+- name: 🇳🇱 荷兰 46|cp甄选
+  server: 87.199.205.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 501a2da5-cb22-4a3f-915e-e3b821d1d62d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: W-9zyiOq287RtXVTZlTFbSDJ0Mx8joyBLJoA7ZE7eBw
+    short-id: ef1d3554c652a436
+  servername: vkvd754.okcdn.ru
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 47|cp甄选
+  server: 51.158.206.25
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+  servername: fuck.rkn
+  client-fingerprint: random
+- name: 🇳🇱 荷兰 48|cp甄选
+  server: 86.54.28.75
   port: 443
   udp: true
   type: vless
@@ -372,38 +458,44 @@ proxies:
     public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
     short-id: 1d86d17709852910
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 40|cp甄选
-  server: 66.163.127.225
-  port: 443
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 49|cp甄选
+  server: 163.172.214.188
+  port: 80
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.indyourperfectremotetechjobfromthecomfortofhome.com
-  skip-cert-verify: false
-- name: 🇳🇱 荷兰 41|cp甄选
-  server: base.hosamobenl.co.uk
+  type: vless
+  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: SC-TheNetherlands1.09vpn.com
+- name: 🇳🇱 荷兰 50|cp甄选
+  server: 147.45.108.45
   port: 443
   udp: true
   type: vless
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
+  flow: xtls-rprx-vision
   tls: true
-  servername: base.hosamobenl.co.uk
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 42|cp甄选
-  server: 82.38.31.190
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 43|cp甄选
+  reality-opts:
+    public-key: IuzAWh6UM62Txrnh_No9y5n6wmZecyR1ki8z5xor-0g
+  servername: absolute-disaster.org
+  client-fingerprint: ''
+- name: 🇳🇱 荷兰 51|cp甄选
   server: 176.65.151.175
   port: 11674
   udp: true
   type: vmess
   uuid: a98a98cb-ae86-43ae-b695-cf0dbcad3fc2
+  alterId: 0
+  cipher: auto
+- name: 🇳🇱 荷兰 52|cp甄选
+  server: 123466.ru
+  port: 26032
+  udp: true
+  type: vmess
+  uuid: 804334e2-04ca-434c-8311-3ccee8218175
   alterId: 0
   cipher: auto
 proxy-groups:
@@ -454,6 +546,15 @@ proxy-groups:
   - 🇳🇱 荷兰 41|cp甄选
   - 🇳🇱 荷兰 42|cp甄选
   - 🇳🇱 荷兰 43|cp甄选
+  - 🇳🇱 荷兰 44|cp甄选
+  - 🇳🇱 荷兰 45|cp甄选
+  - 🇳🇱 荷兰 46|cp甄选
+  - 🇳🇱 荷兰 47|cp甄选
+  - 🇳🇱 荷兰 48|cp甄选
+  - 🇳🇱 荷兰 49|cp甄选
+  - 🇳🇱 荷兰 50|cp甄选
+  - 🇳🇱 荷兰 51|cp甄选
+  - 🇳🇱 荷兰 52|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -502,5 +603,14 @@ proxy-groups:
   - 🇳🇱 荷兰 41|cp甄选
   - 🇳🇱 荷兰 42|cp甄选
   - 🇳🇱 荷兰 43|cp甄选
+  - 🇳🇱 荷兰 44|cp甄选
+  - 🇳🇱 荷兰 45|cp甄选
+  - 🇳🇱 荷兰 46|cp甄选
+  - 🇳🇱 荷兰 47|cp甄选
+  - 🇳🇱 荷兰 48|cp甄选
+  - 🇳🇱 荷兰 49|cp甄选
+  - 🇳🇱 荷兰 50|cp甄选
+  - 🇳🇱 荷兰 51|cp甄选
+  - 🇳🇱 荷兰 52|cp甄选
 rules:
 - MATCH,PROXIES

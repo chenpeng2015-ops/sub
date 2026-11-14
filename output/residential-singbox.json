@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 01|cp甄选",
-      "server": "nlll.obxodvpn.us",
-      "server_port": 443,
-      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
-      "tls": {
-        "enabled": true,
-        "server_name": "nlll.obxodvpn.us",
-        "insecure": true
-      }
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 01 (移动家宽)|cp甄选",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21022,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 01|cp甄选"
+        "🇭🇰 中国香港 01 (移动家宽)|cp甄选"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 01|cp甄选"
+        "🇭🇰 中国香港 01 (移动家宽)|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

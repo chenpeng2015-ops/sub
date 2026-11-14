@@ -5,21 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 01|cp甄选",
-      "server": "p1real5.greewebservices.ir",
-      "server_port": 1270,
-      "uuid": "b0511969-f769-460b-963b-70c6b84b6967",
+      "tag": "🇨🇿 捷克 01|cp甄选",
+      "server": "194.87.109.106",
+      "server_port": 443,
+      "uuid": "d9274255-edf4-4944-bc62-6ef35cd2de40",
       "tls": {
         "enabled": true,
-        "server_name": "play.googleapis.com",
+        "server_name": "currant.asynchronous.site",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
-          "short_id": "9b60d3"
         }
       }
     },
@@ -28,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 01|cp甄选"
+        "🇨🇿 捷克 01|cp甄选"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 01|cp甄选"
+        "🇨🇿 捷克 01|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

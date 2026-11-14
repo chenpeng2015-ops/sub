@@ -12,15 +12,15 @@
       "password": "Bwlqh7GcFB"
     },
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇯🇵 日本 02|cp甄选",
-      "server": "8.211.175.236",
-      "server_port": 8443,
-      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
-      "tls": {
-        "enabled": true,
-        "server_name": "8.211.175.236",
-        "insecure": true
+      "server": "168.138.43.75",
+      "server_port": 80,
+      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8"
       }
     },
     {
@@ -39,34 +39,63 @@
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 04|cp甄选",
       "server": "84.247.155.196",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 05|cp甄选",
-      "server": "84.247.155.196",
       "server_port": 80,
       "method": "aes-256-gcm",
       "password": "3eOFeNssde7PYYMv"
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 06|cp甄选",
-      "server": "104.21.0.87",
+      "tag": "🇯🇵 日本 05|cp甄选",
+      "server": "13.140.248.125",
       "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "uuid": "4f82d72b-9644-c39a-ac6b-abbf15a862aa",
       "tls": {
         "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false
+        "server_name": "xray-p1vi234h-lunar-forest-6.cloady.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/tyxyws",
+        "path": "/e3e2aa65089989f0",
         "headers": {
-          "Host": "jp3.yohototo.top"
+          "Host": "xray-p1vi234h-lunar-forest-6.cloady.io"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 06|cp甄选",
+      "server": "8.211.175.236",
+      "server_port": 8443,
+      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
+      "tls": {
+        "enabled": true,
+        "server_name": "8.211.175.236",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 07|cp甄选",
+      "server": "zfapi.zalolink.com",
+      "server_port": 43149,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "psstatic.cdn.bcebos.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE",
+          "short_id": "15aa0ad4"
         }
       }
     },
@@ -80,7 +109,8 @@
         "🇯🇵 日本 03|cp甄选",
         "🇯🇵 日本 04|cp甄选",
         "🇯🇵 日本 05|cp甄选",
-        "🇯🇵 日本 06|cp甄选"
+        "🇯🇵 日本 06|cp甄选",
+        "🇯🇵 日本 07|cp甄选"
       ]
     },
     {
@@ -92,7 +122,8 @@
         "🇯🇵 日本 03|cp甄选",
         "🇯🇵 日本 04|cp甄选",
         "🇯🇵 日本 05|cp甄选",
-        "🇯🇵 日本 06|cp甄选"
+        "🇯🇵 日本 06|cp甄选",
+        "🇯🇵 日本 07|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

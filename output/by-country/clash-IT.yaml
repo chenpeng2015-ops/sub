@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 01|cp甄选
-  server: 185.164.175.81
+  server: 202.50.253.45
   port: 19999
   udp: true
   type: ss
@@ -19,42 +19,42 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 03|cp甄选
-  server: 202.50.253.45
+  server: 202.50.253.81
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 04|cp甄选
-  server: 202.50.253.54
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 05|cp甄选
-  server: 202.50.253.63
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 06|cp甄选
   server: 202.50.253.27
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 07|cp甄选
+- name: 🇮🇹 意大利 05|cp甄选
   server: 202.50.253.72
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 06|cp甄选
+  server: 185.164.175.81
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 07|cp甄选
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 08|cp甄选
-  server: 202.50.253.99
+  server: 202.50.253.18
   port: 19999
   udp: true
   type: ss
@@ -68,19 +68,26 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 10|cp甄选
-  server: 202.50.253.18
+  server: 202.50.253.99
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 11|cp甄选
-  server: 202.50.253.81
+  server: 202.50.253.63
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 12|cp甄选
+  server: dns24.m3hrzd.ir
+  port: 1349
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,6 +104,7 @@ proxy-groups:
   - 🇮🇹 意大利 09|cp甄选
   - 🇮🇹 意大利 10|cp甄选
   - 🇮🇹 意大利 11|cp甄选
+  - 🇮🇹 意大利 12|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,5 +121,6 @@ proxy-groups:
   - 🇮🇹 意大利 09|cp甄选
   - 🇮🇹 意大利 10|cp甄选
   - 🇮🇹 意大利 11|cp甄选
+  - 🇮🇹 意大利 12|cp甄选
 rules:
 - MATCH,PROXIES
