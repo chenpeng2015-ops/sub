@@ -5,32 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 01|cp甄选
-  server: 157.254.38.210
-  port: 20028
-  udp: true
-  type: trojan
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 02|cp甄选
-  server: 94.184.37.198
-  port: 18409
+  server: 45.92.219.47
+  port: 443
   udp: true
   type: vless
-  uuid: d7b1a442-678d-4fe1-9fed-590698c3fba9
+  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
+  flow: xtls-rprx-vision
   tls: true
-  servername: access.dastanacloud.ir
-  skip-cert-verify: false
+  reality-opts:
+    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
+  servername: ty.galactichub.online
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 03|cp甄选
-  server: 157.254.38.210
-  port: 20027
+- name: 🇹🇷 土耳其 02|cp甄选
+  server: 62.133.63.45
+  port: 8444
   udp: true
-  type: trojan
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-  skip-cert-verify: false
-- name: 🇹🇷 土耳其 04|cp甄选
+  type: vless
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇹🇷 土耳其 03|cp甄选
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -42,6 +42,30 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: random
+- name: 🇹🇷 土耳其 04|cp甄选
+  server: tr3.h1cloud.net
+  port: 25515
+  udp: true
+  type: hysteria2
+  password: b36a14f8-fc3f-4142-968f-48031cf5f330
+  sni: 2c74e5t.tr3.h1clayd.click
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 05|cp甄选
+  server: 157.254.38.210
+  port: 20028
+  udp: true
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: false
+- name: 🇹🇷 土耳其 06|cp甄选
+  server: 157.254.38.210
+  port: 20027
+  udp: true
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +75,8 @@ proxy-groups:
   - 🇹🇷 土耳其 02|cp甄选
   - 🇹🇷 土耳其 03|cp甄选
   - 🇹🇷 土耳其 04|cp甄选
+  - 🇹🇷 土耳其 05|cp甄选
+  - 🇹🇷 土耳其 06|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +86,7 @@ proxy-groups:
   - 🇹🇷 土耳其 02|cp甄选
   - 🇹🇷 土耳其 03|cp甄选
   - 🇹🇷 土耳其 04|cp甄选
+  - 🇹🇷 土耳其 05|cp甄选
+  - 🇹🇷 土耳其 06|cp甄选
 rules:
 - MATCH,PROXIES

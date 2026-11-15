@@ -19,23 +19,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
 - name: 🇿🇦 南非 03|cp甄选
-  server: 94.184.37.198
-  port: 18407
-  udp: true
-  type: vless
-  uuid: d7b1a442-678d-4fe1-9fed-590698c3fba9
-  tls: true
-  servername: access.dastanacloud.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇿🇦 南非 04|cp甄选
   server: 139.84.231.142
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: explorecareerpathsandunlockprofessionalsuccesstoday.com
-  skip-cert-verify: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,7 +34,6 @@ proxy-groups:
   - 🇿🇦 南非 01|cp甄选
   - 🇿🇦 南非 02|cp甄选
   - 🇿🇦 南非 03|cp甄选
-  - 🇿🇦 南非 04|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +42,5 @@ proxy-groups:
   - 🇿🇦 南非 01|cp甄选
   - 🇿🇦 南非 02|cp甄选
   - 🇿🇦 南非 03|cp甄选
-  - 🇿🇦 南非 04|cp甄选
 rules:
 - MATCH,PROXIES
