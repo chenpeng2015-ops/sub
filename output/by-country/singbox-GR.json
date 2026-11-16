@@ -5,10 +5,10 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 01|cp甄选",
-      "server": "147.224.233.249",
-      "server_port": 63690,
-      "uuid": "47637b04-945c-481e-b221-03c32d10c52d",
+      "tag": "🇬🇷 希腊 01|cp甄选",
+      "server": "85.90.197.220",
+      "server_port": 443,
+      "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -19,8 +19,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "U7t4RFE9MSMtC-o1DoJ8pYzKMfgVpTg6ZhTTknBrVkU",
-          "short_id": "1f2519bb96e5589c"
+          "public_key": "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4",
+          "short_id": "94acb54627612d43"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 智利 01|cp甄选"
+        "🇬🇷 希腊 01|cp甄选"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 智利 01|cp甄选"
+        "🇬🇷 希腊 01|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

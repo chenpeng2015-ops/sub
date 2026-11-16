@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 01|cp甄选
-  server: 178.212.35.198
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
-  tls: true
-  reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-    short-id: 6bdc8320
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 02|cp甄选
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -27,22 +15,34 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 03|cp甄选
-  server: 13.140.253.35
+  client-fingerprint: random
+- name: 🇮🇳 印度 02|cp甄选
+  server: 85.234.100.32
   port: 443
   udp: true
   type: vless
-  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
+  uuid: c1208c5a-2350-0003-affd-fc41b4319286
   tls: true
-  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
+  servername: decdn-28.nome-rkp.net
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /0175469f14317d82
+    path: /media/ws/
     headers:
-      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
+      Host: decdn-28.nome-rkp.net
+- name: 🇮🇳 印度 03|cp甄选
+  server: in.smrtai.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  tls: true
+  reality-opts:
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+    short-id: 6bdc8320
+  servername: www.cloudflare.com
+  client-fingerprint: random
 - name: 🇮🇳 印度 04|cp甄选
   server: 13.140.56.100
   port: 14430
@@ -54,6 +54,21 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
+- name: 🇮🇳 印度 05|cp甄选
+  server: 104.21.13.108
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
+  tls: true
+  servername: small-forest-d3e9.sarahds.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /0175469f14317d82
+    headers:
+      Host: small-forest-d3e9.sarahds.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +78,7 @@ proxy-groups:
   - 🇮🇳 印度 02|cp甄选
   - 🇮🇳 印度 03|cp甄选
   - 🇮🇳 印度 04|cp甄选
+  - 🇮🇳 印度 05|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,5 +88,6 @@ proxy-groups:
   - 🇮🇳 印度 02|cp甄选
   - 🇮🇳 印度 03|cp甄选
   - 🇮🇳 印度 04|cp甄选
+  - 🇮🇳 印度 05|cp甄选
 rules:
 - MATCH,PROXIES
