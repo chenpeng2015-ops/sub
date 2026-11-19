@@ -48,26 +48,39 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 03|cp甄选",
-      "server": "200.169.179.233",
+      "server": "89.223.124.93",
       "server_port": 443,
-      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
+      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vps3.nemnogogo.com",
-        "insecure": false,
+        "server_name": "dfgdfgb.wey-land.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rLkjhzhSAJrey5Qv3624_5B-MpViafV2dDdDCnqn_l4",
+          "short_id": ""
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "mobile.api.Event"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 04|cp甄选",
+      "server": "103.88.243.142",
+      "server_port": 11592,
+      "password": "41edb44c8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-17e124.21freedom.net",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 04|cp甄选",
+      "tag": "🇷🇺 俄罗斯 05|cp甄选",
       "server": "201.24.121.243",
       "server_port": 443,
       "uuid": "32b5ca9b-3f81-4031-965d-e8b074216e8d",
@@ -90,13 +103,13 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 05|cp甄选",
-      "server": "186.243.218.221",
-      "server_port": 8443,
-      "uuid": "fa937345-6d3e-4ff4-8127-1a836987a0db",
+      "tag": "🇷🇺 俄罗斯 06|cp甄选",
+      "server": "201.51.12.98",
+      "server_port": 443,
+      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
       "tls": {
         "enabled": true,
-        "server_name": "cloudehouse24.ru",
+        "server_name": "vps3.nemnogogo.com",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -104,10 +117,28 @@
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/v1/assets/7c3f9a2e6b4d8f10/us.js",
-        "headers": {
-          "Host": "cloudehouse24.ru"
+        "type": "grpc",
+        "service_name": "mobile.api.Event"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 07|cp甄选",
+      "server": "94.228.123.26",
+      "server_port": 443,
+      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ghjgdfgdfghjmb.wey-land.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cYVz2YZI-PELLGGm38rrGcipPvnWcSMswOh4j536bmg",
+          "short_id": ""
         }
       }
     },
@@ -120,7 +151,9 @@
         "🇷🇺 俄罗斯 02|cp甄选",
         "🇷🇺 俄罗斯 03|cp甄选",
         "🇷🇺 俄罗斯 04|cp甄选",
-        "🇷🇺 俄罗斯 05|cp甄选"
+        "🇷🇺 俄罗斯 05|cp甄选",
+        "🇷🇺 俄罗斯 06|cp甄选",
+        "🇷🇺 俄罗斯 07|cp甄选"
       ]
     },
     {
@@ -131,7 +164,9 @@
         "🇷🇺 俄罗斯 02|cp甄选",
         "🇷🇺 俄罗斯 03|cp甄选",
         "🇷🇺 俄罗斯 04|cp甄选",
-        "🇷🇺 俄罗斯 05|cp甄选"
+        "🇷🇺 俄罗斯 05|cp甄选",
+        "🇷🇺 俄罗斯 06|cp甄选",
+        "🇷🇺 俄罗斯 07|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
