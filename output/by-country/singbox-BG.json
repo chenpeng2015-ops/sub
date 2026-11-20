@@ -4,26 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 01 (家宽)|cp甄选",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
+      "type": "hysteria2",
+      "tag": "🇧🇬 保加利亚 01|cp甄选",
+      "server": "87.121.112.83",
+      "server_port": 443,
+      "password": "9a9f167d-b461-466f-be50-f0ffd598a6f8",
+      "tls": {
+        "enabled": true,
+        "server_name": "bulghys.live",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 01 (家宽)|cp甄选"
+        "🇧🇬 保加利亚 01|cp甄选"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 01 (家宽)|cp甄选"
+        "🇧🇬 保加利亚 01|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

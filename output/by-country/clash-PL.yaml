@@ -5,17 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 01|cp甄选
-  server: 80.47.10.106
+  server: 82.40.63.138
   port: 443
   udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: pl8.galioncc.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: ca60984f-b1f0-4073-bd33-4c75168f749a
+  sni: kraw-pl-4.fantoff.online
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
