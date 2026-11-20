@@ -6,44 +6,33 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 01|cp甄选",
-      "server": "157.180.98.124",
-      "server_port": 49659,
-      "uuid": "88a558b1-9645-42f3-89e5-341570d8486d",
-      "flow": "xtls-rprx-vision",
+      "server": "185.88.101.105",
+      "server_port": 443,
+      "uuid": "f2341274-8dd8-4b80-95fd-780641f6f2da",
       "tls": {
         "enabled": true,
-        "server_name": "apple.com",
+        "server_name": "fl13.svinka.pro",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs",
-          "short_id": "81959fce"
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "fl13svinkapro-grpc"
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 02|cp甄选",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 03|cp甄选",
-      "server": "196.196.204.148",
+      "server": "179.254.126.220",
       "server_port": 443,
-      "uuid": "63aa95e5-3b36-4e53-a86f-7df59652e994",
+      "uuid": "d3863595-3afe-4a74-8305-612ab69cd21c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -61,24 +50,15 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 04|cp甄选",
-      "server": "104.18.63.135",
-      "server_port": 2083,
-      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
-      "tls": {
-        "enabled": true,
-        "server_name": "vipfree.dr-ping.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "tag": "🇫🇮 芬兰 03|cp甄选",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/vless",
         "headers": {
-          "Host": "vipfree.dr-ping.ir"
+          "Host": "45.144.234.157"
         }
       }
     },
@@ -89,8 +69,7 @@
         "auto",
         "🇫🇮 芬兰 01|cp甄选",
         "🇫🇮 芬兰 02|cp甄选",
-        "🇫🇮 芬兰 03|cp甄选",
-        "🇫🇮 芬兰 04|cp甄选"
+        "🇫🇮 芬兰 03|cp甄选"
       ]
     },
     {
@@ -99,8 +78,7 @@
       "outbounds": [
         "🇫🇮 芬兰 01|cp甄选",
         "🇫🇮 芬兰 02|cp甄选",
-        "🇫🇮 芬兰 03|cp甄选",
-        "🇫🇮 芬兰 04|cp甄选"
+        "🇫🇮 芬兰 03|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

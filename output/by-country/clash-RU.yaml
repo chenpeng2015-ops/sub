@@ -18,81 +18,37 @@ proxies:
   servername: apple.com
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 02|cp甄选
-  server: 201.24.121.243
-  port: 443
+  server: 48.103.133.47
+  port: 8443
   udp: true
   type: vless
-  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
-  tls: true
-  servername: kk-ru24a1.testkknegr.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 03|cp甄选
-  server: 201.51.12.98
-  port: 443
-  udp: true
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  servername: vps3.nemnogogo.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 04|cp甄选
-  server: 103.88.243.142
-  port: 11592
-  udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 05|cp甄选
-  server: 168.113.254.247
-  port: 443
-  udp: true
-  type: hysteria2
-  password: b006650f-8771-0001-b7fa-e18fc6e80ef1
-  sni: vcerx-ru-67sb.my-fade.cloud
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 06|cp甄选
-  server: 178.130.46.188
-  port: 443
-  udp: true
-  type: vless
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  uuid: 2ed34e7c-45c5-4e0e-bcab-42fe99a7bd25
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: nl16-r.bankai.party
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 07|cp甄选
-  server: 78.159.245.147
-  port: 445
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  servername: apple.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 03|cp甄选
+  server: 176.98.176.60
+  port: 443
   udp: true
   type: vless
-  uuid: 37af0181-5598-4aad-a040-d926bcb65757
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA
-  servername: passport.yandex.ru
+  servername: mosaic.topp-con.xyz
+  skip-cert-verify: false
   client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇷🇺 俄罗斯 08|cp甄选
-  server: xsru1.ddnsfree.com
+- name: 🇷🇺 俄罗斯 04|cp甄选
+  server: xssite.webredirect.org
   port: 443
   udp: true
   type: vless
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   tls: true
-  servername: xsru1.ddnsfree.com
+  servername: xssite.webredirect.org
   skip-cert-verify: false
   client-fingerprint: random
   network: grpc
@@ -107,10 +63,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 02|cp甄选
   - 🇷🇺 俄罗斯 03|cp甄选
   - 🇷🇺 俄罗斯 04|cp甄选
-  - 🇷🇺 俄罗斯 05|cp甄选
-  - 🇷🇺 俄罗斯 06|cp甄选
-  - 🇷🇺 俄罗斯 07|cp甄选
-  - 🇷🇺 俄罗斯 08|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -120,9 +72,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 02|cp甄选
   - 🇷🇺 俄罗斯 03|cp甄选
   - 🇷🇺 俄罗斯 04|cp甄选
-  - 🇷🇺 俄罗斯 05|cp甄选
-  - 🇷🇺 俄罗斯 06|cp甄选
-  - 🇷🇺 俄罗斯 07|cp甄选
-  - 🇷🇺 俄罗斯 08|cp甄选
 rules:
 - MATCH,PROXIES
