@@ -15,27 +15,6 @@
         "server_name": "apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 02|cp甄选",
-      "server": "37.235.247.81",
-      "server_port": 8443,
-      "uuid": "2ae0670d-0bdf-409e-9a55-4e970252d378",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "utls": {
-          "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
@@ -47,15 +26,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 03|cp甄选",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 04|cp甄选",
+      "tag": "🇷🇺 俄罗斯 02|cp甄选",
       "server": "48.103.218.77",
       "server_port": 18443,
       "method": "aes-256-gcm",
@@ -63,14 +34,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 05|cp甄选",
+      "tag": "🇷🇺 俄罗斯 03|cp甄选",
       "server": "201.51.12.98",
       "server_port": 443,
       "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
       "tls": {
         "enabled": true,
         "server_name": "vps3.nemnogogo.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
       },
       "transport": {
         "type": "grpc",
@@ -79,70 +54,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 06|cp甄选",
-      "server": "168.113.253.178",
-      "server_port": 443,
-      "uuid": "608172ed-68e4-0001-85dc-f92c25d0eb92",
-      "tls": {
-        "enabled": true,
-        "server_name": "uzndiuvzvqqljdyhzs.fcloudservices.site",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 07|cp甄选",
-      "server": "srv-17e124.21freedom.net",
-      "server_port": 11592,
-      "password": "41edb44c8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-17e124.21freedom.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 08|cp甄选",
+      "tag": "🇷🇺 俄罗斯 04|cp甄选",
       "server": "147.45.175.81",
       "server_port": 443,
       "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
       "tls": {
         "enabled": true,
-        "server_name": "xssite.webredirect.org",
+        "server_name": "xsru2.freeddns.org",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc-ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 09|cp甄选",
-      "server": "xssite.webredirect.org",
-      "server_port": 443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
-      "tls": {
-        "enabled": true,
-        "server_name": "xssite.webredirect.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
+        "type": "ws",
+        "path": "/wsru",
+        "headers": {
+          "Host": "xsru2.freeddns.org"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-ru"
       }
     },
     {
@@ -153,12 +83,7 @@
         "🇷🇺 俄罗斯 01|cp甄选",
         "🇷🇺 俄罗斯 02|cp甄选",
         "🇷🇺 俄罗斯 03|cp甄选",
-        "🇷🇺 俄罗斯 04|cp甄选",
-        "🇷🇺 俄罗斯 05|cp甄选",
-        "🇷🇺 俄罗斯 06|cp甄选",
-        "🇷🇺 俄罗斯 07|cp甄选",
-        "🇷🇺 俄罗斯 08|cp甄选",
-        "🇷🇺 俄罗斯 09|cp甄选"
+        "🇷🇺 俄罗斯 04|cp甄选"
       ]
     },
     {
@@ -168,12 +93,7 @@
         "🇷🇺 俄罗斯 01|cp甄选",
         "🇷🇺 俄罗斯 02|cp甄选",
         "🇷🇺 俄罗斯 03|cp甄选",
-        "🇷🇺 俄罗斯 04|cp甄选",
-        "🇷🇺 俄罗斯 05|cp甄选",
-        "🇷🇺 俄罗斯 06|cp甄选",
-        "🇷🇺 俄罗斯 07|cp甄选",
-        "🇷🇺 俄罗斯 08|cp甄选",
-        "🇷🇺 俄罗斯 09|cp甄选"
+        "🇷🇺 俄罗斯 04|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,32 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 01|cp甄选",
-      "server": "104.17.147.208",
-      "server_port": 443,
-      "uuid": "258ca28a-d982-4a40-b620-7c1c81108060",
-      "tls": {
-        "enabled": true,
-        "server_name": "b.rack.sxsc.dpdns.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "b.rack.sxsc.dpdns.org"
-        }
-      }
+      "server": "149.88.106.73",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 02|cp甄选",
-      "server": "149.88.106.74",
+      "server": "149.88.107.74",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -37,10 +22,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 03|cp甄选",
-      "server": "168.138.177.98",
-      "server_port": 56927,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "c11JMfCMQ3Y4aGlhMX5LrMpM13uvw+UVbjGfHP+eKkY="
+      "server": "149.88.107.47",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "shadowsocks",
@@ -51,48 +36,8 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇸🇬 新加坡 05|cp甄选",
-      "server": "15.235.182.183",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 06|cp甄选",
-      "server": "15.235.164.133",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 07|cp甄选",
-      "server": "149.88.107.47",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 08|cp甄选",
-      "server": "149.88.106.73",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 09|cp甄选",
-      "server": "ww11.levikogjgfdd.ir",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 10|cp甄选",
       "server": "149.88.23.202",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
@@ -100,64 +45,59 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 11|cp甄选",
+      "tag": "🇸🇬 新加坡 06|cp甄选",
+      "server": "149.88.106.74",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 07|cp甄选",
+      "server": "149.88.23.207",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 08|cp甄选",
+      "server": "168.138.177.98",
+      "server_port": 56927,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "c11JMfCMQ3Y4aGlhMX5LrMpM13uvw+UVbjGfHP+eKkY="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 09|cp甄选",
+      "server": "15.235.182.183",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 10|cp甄选",
       "server": "68.183.235.122",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 12|cp甄选",
-      "server": "128.1.186.73",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 13|cp甄选",
-      "server": "68.183.235.240",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 14|cp甄选",
+      "tag": "🇸🇬 新加坡 11|cp甄选",
       "server": "138.2.73.238",
       "server_port": 50160,
       "password": "f87376e17da040ed04c9665ce8972930",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "138.2.73.238",
         "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 15|cp甄选",
-      "server": "67.159.52.81",
-      "server_port": 443,
-      "uuid": "a16bd0e2-ff2e-4e4c-a955-0c684255a065",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sg.fasti.win",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs",
-          "short_id": "feedbacc"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 16|cp甄选",
+      "tag": "🇸🇬 新加坡 12|cp甄选",
       "server": "13.212.78.215",
       "server_port": 443,
       "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
@@ -168,16 +108,54 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 17|cp甄选",
-      "server": "68.183.227.236",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 13|cp甄选",
+      "server": "hkzfsg2.mateflora.com",
+      "server_port": 443,
+      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "tls": {
+        "enabled": true,
+        "server_name": "hkzfsg2.mateflora.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "fcfqz5o4znnjqtrp"
+      }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 18|cp甄选",
+      "tag": "🇸🇬 新加坡 14|cp甄选",
+      "server": "139.180.221.53",
+      "server_port": 443,
+      "uuid": "2b30d0df-6ebe-4aed-9bad-b7c554e35e1d",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "plfXwkb-ewI6iibJBTRmPnf8eqPId1BfdArMIm3_mB4",
+          "short_id": "2f6f6f87"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 15|cp甄选",
       "server": "139.162.27.96",
       "server_port": 2096,
       "uuid": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
@@ -200,38 +178,30 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 19|cp甄选",
-      "server": "149.88.107.74",
+      "tag": "🇸🇬 新加坡 16|cp甄选",
+      "server": "15.235.164.133",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "trojan",
-      "tag": "🇸🇬 新加坡 20|cp甄选",
-      "server": "15.235.184.127",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "exploredigitaljobplatformandfindonlinework.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 21|cp甄选",
-      "server": "xjpp.zjlo.top",
-      "server_port": 36442,
-      "uuid": "b743c868-b35c-4d91-b88b-d9efd7060b5c",
+      "tag": "🇸🇬 新加坡 17|cp甄选",
+      "server": "134.185.81.5",
+      "server_port": 47881,
+      "uuid": "59b203b2-b1bc-4e9c-a9e5-ccb8f691bf72",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "xjpp.zjlo.top",
-        "insecure": false,
+        "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4",
+          "short_id": "38d72071"
         }
       }
     },
@@ -256,11 +226,7 @@
         "🇸🇬 新加坡 14|cp甄选",
         "🇸🇬 新加坡 15|cp甄选",
         "🇸🇬 新加坡 16|cp甄选",
-        "🇸🇬 新加坡 17|cp甄选",
-        "🇸🇬 新加坡 18|cp甄选",
-        "🇸🇬 新加坡 19|cp甄选",
-        "🇸🇬 新加坡 20|cp甄选",
-        "🇸🇬 新加坡 21|cp甄选"
+        "🇸🇬 新加坡 17|cp甄选"
       ]
     },
     {
@@ -283,11 +249,7 @@
         "🇸🇬 新加坡 14|cp甄选",
         "🇸🇬 新加坡 15|cp甄选",
         "🇸🇬 新加坡 16|cp甄选",
-        "🇸🇬 新加坡 17|cp甄选",
-        "🇸🇬 新加坡 18|cp甄选",
-        "🇸🇬 新加坡 19|cp甄选",
-        "🇸🇬 新加坡 20|cp甄选",
-        "🇸🇬 新加坡 21|cp甄选"
+        "🇸🇬 新加坡 17|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
