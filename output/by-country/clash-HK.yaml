@@ -5,47 +5,65 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 01|cp甄选
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 02|cp甄选
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 03|cp甄选
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.29
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 04|cp甄选
-  server: nb2hk.hikigo.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: nb2hk.hikigo.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: o5qgnpl75wayhkn5
-- name: 🇭🇰 中国香港 05|cp甄选
   server: 213.176.92.148
   port: 40647
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
+- name: 🇭🇰 中国香港 02|cp甄选
+  server: 64.118.130.152
+  port: 443
+  udp: true
+  type: trojan
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: nb1hk.hikigo.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 03|cp甄选
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 04|cp甄选
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 05|cp甄选
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: speedtest.tinkoff.ru
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 06|cp甄选
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 07|cp甄选
+  server: 66hk.mateflora.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: 66hk.mateflora.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: aemx2gndpgrt1qau
+- name: 🇭🇰 中国香港 08|cp甄选
   server: 62.60.232.226
   port: 2096
   udp: true
@@ -56,6 +74,32 @@ proxies:
   servername: nova-house.justext.space
   skip-cert-verify: false
   client-fingerprint: firefox
+- name: 🇭🇰 中国香港 09|cp甄选
+  server: 116.213.43.43
+  port: 11106
+  udp: true
+  type: vless
+  uuid: 2e7bd251-52be-4ffa-b79e-108e1fe07185
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -13uTSuqk44pCU0x6yvldaskzyRIlO2ihmDvM0FsBns
+    short-id: da12e31124830d42
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 10|cp甄选
+  server: pdmv4.xiaoyan.io
+  port: 16632
+  udp: true
+  type: vmess
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +111,10 @@ proxy-groups:
   - 🇭🇰 中国香港 04|cp甄选
   - 🇭🇰 中国香港 05|cp甄选
   - 🇭🇰 中国香港 06|cp甄选
+  - 🇭🇰 中国香港 07|cp甄选
+  - 🇭🇰 中国香港 08|cp甄选
+  - 🇭🇰 中国香港 09|cp甄选
+  - 🇭🇰 中国香港 10|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,5 +126,9 @@ proxy-groups:
   - 🇭🇰 中国香港 04|cp甄选
   - 🇭🇰 中国香港 05|cp甄选
   - 🇭🇰 中国香港 06|cp甄选
+  - 🇭🇰 中国香港 07|cp甄选
+  - 🇭🇰 中国香港 08|cp甄选
+  - 🇭🇰 中国香港 09|cp甄选
+  - 🇭🇰 中国香港 10|cp甄选
 rules:
 - MATCH,PROXIES
