@@ -19,19 +19,19 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 03|cp甄选
-  server: 149.22.87.204
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 04|cp甄选
   server: 168.138.205.100
   port: 53758
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: Bwlqh7GcFB
+- name: 🇯🇵 日本 04|cp甄选
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇯🇵 日本 05|cp甄选
   server: 158.101.151.157
   port: 443
@@ -46,27 +46,15 @@ proxies:
   servername: www.microsoft.com
   client-fingerprint: chrome
 - name: 🇯🇵 日本 06|cp甄选
-  server: nb5rb.hikigo.com
+  server: 94.177.131.113
   port: 443
   udp: true
-  type: hysteria2
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: nb5rb.hikigo.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: yhlbhcysaba0wtn1
-- name: 🇯🇵 日本 07|cp甄选
-  server: 155.248.175.201
-  port: 23169
-  udp: true
   type: vless
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  flow: xtls-rprx-vision
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   tls: true
-  servername: djj.zjlo.top
+  servername: kuruish.org
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 08|cp甄选
+- name: 🇯🇵 日本 07|cp甄选
   server: 161.33.20.255
   port: 8880
   udp: true
@@ -77,52 +65,54 @@ proxies:
   network: ws
   ws-opts:
     path: e0856508-d693-450a-a099-455091dc4f25-vm
+- name: 🇯🇵 日本 08|cp甄选
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
+  skip-cert-verify: true
 - name: 🇯🇵 日本 09|cp甄选
-  server: 168.110.63.247
-  port: 8081
+  server: 129.225.181.46
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: oracle_hy2_pass_2026
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 10|cp甄选
+  server: 168.138.43.75
+  port: 80
   udp: true
   type: vmess
-  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /vless
-- name: 🇯🇵 日本 10|cp甄选
-  server: 198.13.53.39
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8f21c635-ef0a-4b05-8356-f44d463b6e34
-  tls: true
-  reality-opts:
-    public-key: xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k
-    short-id: 7a7cc838
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
+    path: /cctv13.m3u8
     headers:
-      Host: itunes.apple.com
+      Host: 168.138.43.75
 - name: 🇯🇵 日本 11|cp甄选
-  server: 172.104.86.181
-  port: 443
+  server: 155.248.175.201
+  port: 23169
   udp: true
   type: vless
-  uuid: 010431f3-04f6-4404-a801-b93bf2e3c2b2
+  uuid: 7318caa1-93d1-4a9d-c481-504599902700
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: ujYDprigWFLxcj4BtitDNa-hoPjIbpSzrnEcqp3cgjk
-    short-id: c8559ca1
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
+  servername: djj.zjlo.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇯🇵 日本 12|cp甄选
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 13|cp甄选
   server: 149.28.29.156
   port: 443
   udp: true
@@ -139,7 +129,32 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 13|cp甄选
+- name: 🇯🇵 日本 14|cp甄选
+  server: 198.13.53.39
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8f21c635-ef0a-4b05-8356-f44d463b6e34
+  tls: true
+  reality-opts:
+    public-key: xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k
+    short-id: 7a7cc838
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 15|cp甄选
+  server: 64.176.34.102
+  port: 46130
+  udp: true
+  type: vmess
+  uuid: 477350b2-7536-4f38-ee21-020efdde2d1d
+  alterId: 0
+  cipher: auto
+- name: 🇯🇵 日本 16|cp甄选
   server: 45.76.222.108
   port: 443
   udp: true
@@ -156,8 +171,8 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 14|cp甄选
-  server: 104.16.10.185
+- name: 🇯🇵 日本 17|cp甄选
+  server: 172.67.217.240
   port: 443
   udp: true
   type: vless
@@ -165,15 +180,29 @@ proxies:
   tls: true
   servername: jp3.yohototo.top
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: ios
   network: ws
   ws-opts:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 15|cp甄选
+- name: 🇯🇵 日本 18|cp甄选
   server: 84.247.155.196
-  port: 443
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 19|cp甄选
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 20|cp甄选
+  server: 84.247.155.196
+  port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
@@ -198,6 +227,11 @@ proxy-groups:
   - 🇯🇵 日本 13|cp甄选
   - 🇯🇵 日本 14|cp甄选
   - 🇯🇵 日本 15|cp甄选
+  - 🇯🇵 日本 16|cp甄选
+  - 🇯🇵 日本 17|cp甄选
+  - 🇯🇵 日本 18|cp甄选
+  - 🇯🇵 日本 19|cp甄选
+  - 🇯🇵 日本 20|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -218,5 +252,10 @@ proxy-groups:
   - 🇯🇵 日本 13|cp甄选
   - 🇯🇵 日本 14|cp甄选
   - 🇯🇵 日本 15|cp甄选
+  - 🇯🇵 日本 16|cp甄选
+  - 🇯🇵 日本 17|cp甄选
+  - 🇯🇵 日本 18|cp甄选
+  - 🇯🇵 日本 19|cp甄选
+  - 🇯🇵 日本 20|cp甄选
 rules:
 - MATCH,PROXIES
