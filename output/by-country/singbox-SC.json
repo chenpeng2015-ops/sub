@@ -25,18 +25,57 @@
       }
     },
     {
+      "type": "anytls",
+      "tag": "🇸🇨 塞舌尔 02|cp甄选",
+      "server": "sfu.gosthk.site",
+      "server_port": 57180,
+      "password": "3a3bd9e1-3762-4f6f-8d10-bf32846d2824",
+      "tls": {
+        "enabled": true,
+        "server_name": "sfu.gosthk.site",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 03|cp甄选",
+      "server": "196.196.149.80",
+      "server_port": 443,
+      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
+      "tls": {
+        "enabled": true,
+        "server_name": "b3cd32g.es1.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7efBhLzPwoTtEC1GlukCdiTllobUfa2_XuAKNSLJx30",
+          "short_id": "e7cffac9f8cfb434"
+        }
+      },
+      "transport": {
+        "type": "grpc"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 01|cp甄选"
+        "🇸🇨 塞舌尔 01|cp甄选",
+        "🇸🇨 塞舌尔 02|cp甄选",
+        "🇸🇨 塞舌尔 03|cp甄选"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 01|cp甄选"
+        "🇸🇨 塞舌尔 01|cp甄选",
+        "🇸🇨 塞舌尔 02|cp甄选",
+        "🇸🇨 塞舌尔 03|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
