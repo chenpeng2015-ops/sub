@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 01|cp甄选
-  server: leviko-nl9472.shopingggg.ir
+  server: 195.133.93.227
   port: 9543
   udp: true
   type: vless
