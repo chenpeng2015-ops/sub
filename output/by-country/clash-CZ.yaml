@@ -16,21 +16,8 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcdf
   servername: storage.yandexcloud.net
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 02|cp甄选
-  server: leviko-nl2962.shopingggg.ir
-  port: 9543
-  udp: true
-  type: vless
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 03|cp甄选
+- name: 🇨🇿 捷克 02|cp甄选
   server: 153.52.69.249
   port: 443
   udp: true
@@ -43,21 +30,29 @@ proxies:
     short-id: d5492c7a39515c65
   servername: cache-78.topp-con.xyz
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 04|cp甄选
-  server: 193.124.56.100
-  port: 443
+- name: 🇨🇿 捷克 03|cp甄选
+  server: leviko-nl2962.shopingggg.ir
+  port: 9543
   udp: true
   type: vless
-  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  flow: xtls-rprx-vision
   tls: true
-  servername: parchment.merlano.monster
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 04|cp甄选
+  server: 92.63.189.39
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 7aa77858-f235-0005-9434-7ab060848b17
+  flow: xtls-rprx-vision
+  tls: true
+  servername: avelon.onl
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/de7/stream
-    headers:
-      Host: parchment.merlano.monster
 proxy-groups:
 - name: PROXIES
   type: select

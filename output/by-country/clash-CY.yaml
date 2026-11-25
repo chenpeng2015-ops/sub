@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 01|cp甄选
-  server: 132.243.242.115
+  server: 132.243.242.244
   port: 9543
   udp: true
   type: vless

@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 01|cp甄选",
-      "server": "202.146.222.29",
+      "server": "8.210.92.38",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "uuid": "4fc9dc3d-0d57-49e7-9bc0-e323165241bf",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
+        "server_name": "www.ebay.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vhu6gifBQ8-hRzW1gqKFkEXDlQbf6Ex8kKj1FcxhmzA",
+          "short_id": "d78318845237d9a9"
+        }
       }
     },
     {
@@ -35,13 +44,37 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/clashv8\\u0001f1e8\\u0001f1f3",
+        "server_name": "202.146.222.89",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 04|cp甄选",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.29",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 05|cp甄选",
+      "server": "23.141.172.229",
+      "server_port": 50541,
+      "password": "ePPsH1bMFD",
+      "tls": {
+        "enabled": true,
+        "server_name": "is1-ssl.mzstatic.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 06|cp甄选",
       "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
@@ -57,7 +90,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 05|cp甄选",
+      "tag": "🇭🇰 中国香港 07|cp甄选",
       "server": "213.176.92.148",
       "server_port": 40647,
       "method": "aes-256-gcm",
@@ -72,7 +105,9 @@
         "🇭🇰 中国香港 02|cp甄选",
         "🇭🇰 中国香港 03|cp甄选",
         "🇭🇰 中国香港 04|cp甄选",
-        "🇭🇰 中国香港 05|cp甄选"
+        "🇭🇰 中国香港 05|cp甄选",
+        "🇭🇰 中国香港 06|cp甄选",
+        "🇭🇰 中国香港 07|cp甄选"
       ]
     },
     {
@@ -83,7 +118,9 @@
         "🇭🇰 中国香港 02|cp甄选",
         "🇭🇰 中国香港 03|cp甄选",
         "🇭🇰 中国香港 04|cp甄选",
-        "🇭🇰 中国香港 05|cp甄选"
+        "🇭🇰 中国香港 05|cp甄选",
+        "🇭🇰 中国香港 06|cp甄选",
+        "🇭🇰 中国香港 07|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
