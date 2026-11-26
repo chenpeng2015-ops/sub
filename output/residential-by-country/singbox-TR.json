@@ -4,26 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇴 挪威 01|cp甄选",
-      "server": "185.213.23.63",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 01 (移动家宽)|cp甄选",
+      "server": "raha.ertebatgoostar.ir",
+      "server_port": 80,
+      "uuid": "8c49bed5-dbb2-4c0d-a2f1-2577b12c6c66",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 01|cp甄选"
+        "🇹🇷 土耳其 01 (移动家宽)|cp甄选"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 01|cp甄选"
+        "🇹🇷 土耳其 01 (移动家宽)|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
