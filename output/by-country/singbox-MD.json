@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 01|cp甄选",
-      "server": "18.172.170.121",
+      "type": "trojan",
+      "tag": "🇲🇩 摩尔多瓦 01|cp甄选",
+      "server": "104.21.44.113",
       "server_port": 443,
-      "uuid": "963A4918-A630-29DA-A873-093CDF8AD784",
+      "password": "963A4918-A630-29DA-A873-093CDF8AD784",
       "tls": {
         "enabled": true,
-        "server_name": "deldgy5xz81zm.cloudfront.net",
+        "server_name": "dry-snowflake-b29f.vpnetwork3567.workers.dev",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -21,7 +21,7 @@
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "deldgy5xz81zm.cloudfront.net"
+          "Host": "dry-snowflake-b29f.vpnetwork3567.workers.dev"
         }
       }
     },
@@ -30,14 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 01|cp甄选"
+        "🇲🇩 摩尔多瓦 01|cp甄选"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 01|cp甄选"
+        "🇲🇩 摩尔多瓦 01|cp甄选"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

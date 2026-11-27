@@ -4,31 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 01|cp甄选
-  server: 18.172.170.121
-  port: 443
+- name: 🇪🇪 爱沙尼亚 01|cp甄选
+  server: one.alpheratzz.org
+  port: 8443
   udp: true
   type: vless
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  uuid: 0173d52e-8e1b-4681-831e-11529677b72f
+  flow: xtls-rprx-vision
   tls: true
-  servername: deldgy5xz81zm.cloudfront.net
+  servername: api-6b04608f.adhil.uk
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: deldgy5xz81zm.cloudfront.net
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 01|cp甄选
+  - 🇪🇪 爱沙尼亚 01|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 01|cp甄选
+  - 🇪🇪 爱沙尼亚 01|cp甄选
 rules:
 - MATCH,PROXIES
