@@ -13,13 +13,12 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 02|cp甄选
-  server: 152.69.231.175
-  port: 50160
+  server: 211.178.105.134
+  port: 6123
   udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152.69.231.175
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 - name: 🇰🇷 韩国 03|cp甄选
   server: 140.238.2.250
   port: 443
@@ -29,6 +28,29 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 04|cp甄选
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇰🇷 韩国 05|cp甄选
+  server: 152.69.231.175
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152.69.231.175
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 06|cp甄选
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: 152.67.200.82
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 07|cp甄选
   server: 152.69.226.63
   port: 25555
   udp: true
@@ -37,7 +59,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇰🇷 韩国 05|cp甄选
+- name: 🇰🇷 韩国 08|cp甄选
   server: 152.70.237.123
   port: 2053
   udp: true
@@ -45,7 +67,7 @@ proxies:
   password: maintell
   sni: bing.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 06|cp甄选
+- name: 🇰🇷 韩国 09|cp甄选
   server: 132.226.226.189
   port: 50160
   udp: true
@@ -53,14 +75,19 @@ proxies:
   password: 1671a252e2a97dc2bda4e515475931da
   sni: 132.226.226.189
   skip-cert-verify: true
-- name: 🇰🇷 韩国 07|cp甄选
-  server: 152.67.200.82
-  port: 50160
+- name: 🇰🇷 韩国 10|cp甄选
+  server: w.fugui.us
+  port: 443
   udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 21096a6d-88df-49c7-8882-d09e73b4da95
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J2yp_4F_8h4hHTntLf3URZRrdScOhOPOt1ct9LZJ5n4
+    short-id: 9cab9354c40d5f68
+  servername: w.fugui.us
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,6 +100,9 @@ proxy-groups:
   - 🇰🇷 韩国 05|cp甄选
   - 🇰🇷 韩国 06|cp甄选
   - 🇰🇷 韩国 07|cp甄选
+  - 🇰🇷 韩国 08|cp甄选
+  - 🇰🇷 韩国 09|cp甄选
+  - 🇰🇷 韩国 10|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,5 +115,8 @@ proxy-groups:
   - 🇰🇷 韩国 05|cp甄选
   - 🇰🇷 韩国 06|cp甄选
   - 🇰🇷 韩国 07|cp甄选
+  - 🇰🇷 韩国 08|cp甄选
+  - 🇰🇷 韩国 09|cp甄选
+  - 🇰🇷 韩国 10|cp甄选
 rules:
 - MATCH,PROXIES
