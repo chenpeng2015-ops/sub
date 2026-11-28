@@ -12,15 +12,12 @@ proxies:
   cipher: aes-256-gcm
   password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
 - name: 🇷🇺 俄罗斯 02|cp甄选
-  server: 136.148.83.70
-  port: 443
+  server: 90.156.203.62
+  port: 5112
   udp: true
-  type: vless
-  uuid: 00000000-0000-0001-0000-000000000000
-  tls: true
-  servername: aszbk-ru-78dc.my-fade.cloud
-  skip-cert-verify: false
-  client-fingerprint: qq
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: VVlAff77CnAU43Aoc5j15Y
 - name: 🇷🇺 俄罗斯 03|cp甄选
   server: 200.169.179.233
   port: 443
@@ -35,30 +32,6 @@ proxies:
   grpc-opts:
     grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 04|cp甄选
-  server: 147.45.175.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xsru2.freeddns.org
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /wsru
-    headers:
-      Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 05|cp甄选
-  server: 136.148.83.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 06|cp甄选
   server: 136.148.83.69
   port: 443
   udp: true
@@ -68,28 +41,31 @@ proxies:
   servername: szqbx-ru-77dc.my-fade.cloud
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 07|cp甄选
-  server: 196.245.52.183
+- name: 🇷🇺 俄罗斯 05|cp甄选
+  server: 147.45.175.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xssite.webredirect.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 06|cp甄选
+  server: 196.196.148.85
   port: 443
   udp: true
   type: vless
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
   reality-opts:
-    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
-    short-id: 50a749f0eccb628c
-  servername: 15b171g.nl7.h1clayd.click
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+  servername: 5d0319t.nl7.h1clayd.click
   client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 5b79e8a94241
-- name: 🇷🇺 俄罗斯 08|cp甄选
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,8 +77,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 04|cp甄选
   - 🇷🇺 俄罗斯 05|cp甄选
   - 🇷🇺 俄罗斯 06|cp甄选
-  - 🇷🇺 俄罗斯 07|cp甄选
-  - 🇷🇺 俄罗斯 08|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -114,7 +88,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 04|cp甄选
   - 🇷🇺 俄罗斯 05|cp甄选
   - 🇷🇺 俄罗斯 06|cp甄选
-  - 🇷🇺 俄罗斯 07|cp甄选
-  - 🇷🇺 俄罗斯 08|cp甄选
 rules:
 - MATCH,PROXIES

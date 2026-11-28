@@ -4,14 +4,13 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 01 (家宽)|cp甄选
-  server: rtifgjdr.df6h451rh.xin
-  port: 443
+- name: 🇰🇷 韩国 01 (家宽)|cp甄选
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: anytls
-  password: 2902c46c8493
-  sni: docs.microsoft.com
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
 - name: 🇹🇼 中国台湾 02 (家宽)|cp甄选
   server: er8u54dh.df6h451rh.xin
   port: 443
@@ -20,28 +19,49 @@ proxies:
   password: 2902c46c8493
   sni: px.ads.linkedin.com
   skip-cert-verify: true
-- name: 🇩🇪 德国 03 (移动家宽)|cp甄选
-  server: 47.254.128.109
+- name: 🇭🇰 中国香港 03 (家宽)|cp甄选
+  server: ibsdsf.df6h451rh.xin
   port: 443
   udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  type: anytls
+  password: 2902c46c8493
+  sni: docs.microsoft.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 04 (家宽)|cp甄选
+  server: rtifgjdr.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 2902c46c8493
+  sni: docs.microsoft.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 05 (家宽)|cp甄选
+  server: mfjh645drfj1dr6j5.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 01 (家宽)|cp甄选
+  - 🇰🇷 韩国 01 (家宽)|cp甄选
   - 🇹🇼 中国台湾 02 (家宽)|cp甄选
-  - 🇩🇪 德国 03 (移动家宽)|cp甄选
+  - 🇭🇰 中国香港 03 (家宽)|cp甄选
+  - 🇹🇼 中国台湾 04 (家宽)|cp甄选
+  - 🇹🇼 中国台湾 05 (家宽)|cp甄选
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 01 (家宽)|cp甄选
+  - 🇰🇷 韩国 01 (家宽)|cp甄选
   - 🇹🇼 中国台湾 02 (家宽)|cp甄选
-  - 🇩🇪 德国 03 (移动家宽)|cp甄选
+  - 🇭🇰 中国香港 03 (家宽)|cp甄选
+  - 🇹🇼 中国台湾 04 (家宽)|cp甄选
+  - 🇹🇼 中国台湾 05 (家宽)|cp甄选
 rules:
 - MATCH,PROXIES
